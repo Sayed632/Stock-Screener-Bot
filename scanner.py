@@ -41,16 +41,6 @@ SCREENER_URLS = [
     "https://www.screener.in/screens/4005994/altman-z-score/"
 ]
 
-DSIJ_TARGET_URLS = {
-    "Swing Trading": "https://insights.dsij.in/insight/trending-news/swing-trading",
-    "Penny Stocks": "https://insights.dsij.in/insight/trending-news/penny-stocks",
-    "Multibagger": "https://insights.dsij.in/insight/trending-news/multibagger",
-    "Experts Speak": "https://insights.dsij.in/insight/knowledge/experts-speak",
-    "Mindshare": "https://insights.dsij.in/insight/trending-news/mindshare",
-    "Screener Multibaggers": "https://insights.dsij.in/screener_details/operationtype/multibaggers",
-    "Bonus/Split": "https://insights.dsij.in/insight/trending-news/bonus-stock-split"
-}
-
 HISTORY_FILE = "holdings_history.json"
 CHARTS_DIR = "charts"
 
@@ -70,42 +60,34 @@ def get_screener_session():
     session = requests.Session()
     login_url = "https://www.screener.in/login/"
     try:
-        init_res = session.get(login_url, timeout=10)
+        init_res = session.get(login_url, timeout=15)
         soup = BeautifulSoup(init_res.text, 'html.parser')
         csrf_token = soup.find('input', {'name': 'csrfmiddlewaretoken'})
         if not csrf_token:
+            print("❌ CSRF token not found")
             return None
         payload = {
             'username': SCREENER_USERNAME,
             'password': SCREENER_PASSWORD,
             'csrfmiddlewaretoken': csrf_token['value']
         }
-        res = session.post(login_url, data=payload, headers={'Referer': login_url}, timeout=10)
-        return session if "logout" in res.text.lower() or res.status_code == 200 else None
+        res = session.post(login_url, data=payload, headers={'Referer': login_url}, timeout=15)
+        if "logout" in res.text.lower() or res.status_code == 200:
+            print("✅ Screener login successful")
+            return session
+        else:
+            print("❌ Screener login failed")
+            return None
     except Exception as e:
         print(f"⚠️ Screener session error: {e}")
         return None
-
-def get_dsij_session():
-    if not DSIJ_USERNAME or not DSIJ_PASSWORD:
-        return requests.Session()
-    session = requests.Session()
-    login_url = "https://www.dsij.in/web/login"
-    try:
-        session.get(login_url, timeout=10)
-        payload = {'login': DSIJ_USERNAME, 'password': DSIJ_PASSWORD}
-        session.post(login_url, data=payload, timeout=10)
-        return session
-    except Exception as e:
-        print(f"⚠️ DSIJ Auth exception: {e}")
-        return requests.Session()
 
 def scan_screener_urls(session):
     all_stocks = {}
     for url in SCREENER_URLS:
         print(f"🔍 Scanning: {url}")
         try:
-            res = session.get(url, timeout=15)
+            res = session.get(url, timeout=20)
             soup = BeautifulSoup(res.text, 'html.parser')
             for row in soup.select("table.data-table tbody tr"):
                 link_tag = row.select_one("td a")
@@ -113,221 +95,42 @@ def scan_screener_urls(session):
                     name = link_tag.text.strip()
                     cols = row.find_all('td')
                     try:
-                        price = cols[2].text.strip().replace(',', '')
-                        market_cap = cols[3].text.strip().replace(',', '') if len(cols) > 3 else "N/A"
+                        price = cols[2].text.strip().replace(',', '') if len(cols) > 2 else "N/A"
                     except:
                         price = "N/A"
-                        market_cap = "N/A"
                     all_stocks[name] = {
                         'url': f"https://www.screener.in{link_tag['href']}",
-                        'price': price,
-                        'market_cap': market_cap
+                        'price': price
                     }
         except Exception as e:
             print(f"⚠️ Error scanning {url}: {e}")
     print(f"✅ Total unique stocks found: {len(all_stocks)}")
     return all_stocks
 
-def fetch_dsij_insights(session):
-    dsij_matches = {}
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    for category, url in DSIJ_TARGET_URLS.items():
-        try:
-            res = session.get(url, headers=headers, timeout=12)
-            soup = BeautifulSoup(res.text, 'html.parser')
-            text_blocks = soup.find_all(['a', 'h3', 'h4', 'strong', 'p'])
-            for block in text_blocks:
-                token = block.get_text().strip()
-                if len(token) > 2 and len(token) < 40 and not any(x in token.lower() for x in ['login', 'read more', 'click', 'subscribe']):
-                    cleaned_name = re.sub(r'\b(Ltd|Limited|Shares|Stock|Incentive)\b\.?', '', token, flags=re.IGNORECASE).strip()
-                    if len(cleaned_name) > 2:
-                        if cleaned_name not in dsij_matches:
-                            dsij_matches[cleaned_name] = []
-                        if category not in dsij_matches[cleaned_name]:
-                            dsij_matches[cleaned_name].append(category)
-        except Exception as e:
-            print(f"⚠️ Error parsing DSIJ link [{category}]: {e}")
-            continue
-    return dsij_matches
-
-def parse_shareholding_metrics(session, company_url):
-    res = session.get(company_url, timeout=10)
-    soup = BeautifulSoup(res.text, 'html.parser')
-    
-    order_book_val = "N/A"
-    page_text = soup.get_text()
-    matches = re.findall(r'(?:order\s*book.*?Rs\.?\s*(\d+,?\d*)\s*Cr|order\s*book.*?(\d+,?\d*)\s*crore)', page_text, re.IGNORECASE)
-    if matches:
-        order_book_val = f"₹{[''.join(x) for x in matches][0]} Cr"
-
-    mcap_element = soup.select_one("li:-markdown-conjoint(Market Cap) span.number")
-    mcap_val = mcap_element.text.strip().replace(',', '') if mcap_element else "N/A"
-
-    section = soup.find(id="shareholding")
-    if not section:
-        return None
-    table = section.find('table', class_='data-table')
-    if not table:
-        return None
-    
-    headers = [th.text.strip() for th in table.find('thead').find_all('th')]
-    latest_idx = len(headers) - 1
-    
-    metrics = {
-        'Promoters': 0.0, 'FIIs': 0.0, 'DIIs': 0.0, 'Public': 0.0,
-        'Top_Holders': [], 'Order_Book': order_book_val, 'Market_Cap_Value': mcap_val
-    }
-    tbody = table.find('tbody')
-    if not tbody:
-        return None
-    
-    for row in tbody.find_all('tr'):
-        cols = row.find_all('td')
-        if not cols:
-            continue
-        row_classes = row.get('class', [])
-        if 'sub' in row_classes:
-            holder_name = cols[0].text.strip()
-            try:
-                holder_val = cols[latest_idx].text.strip().replace('%', '')
-                if holder_val and float(holder_val) > 0.0:
-                    metrics['Top_Holders'].append(f"{holder_name} ({holder_val}%)")
-            except:
-                pass
-        else:
-            cat = cols[0].text.strip().replace('+', '').strip()
-            if cat in metrics:
-                try:
-                    val = cols[latest_idx].text.strip().replace('%', '')
-                    metrics[cat] = float(val) if val else 0.0
-                except:
-                    pass
-                
-    return metrics
-
-def fetch_moneycontrol_summaries(company_name):
-    news_items = []
-    query_url = f"https://news.google.com/rss/search?q={company_name}+site:moneycontrol.com&hl=en-IN&gl=IN&ceid=IN:en"
-    try:
-        feed = feedparser.parse(query_url)
-        for entry in feed.entries[:2]:
-            title_clean = entry.title.split('-')[0].strip()
-            summary_tag = "⚠️ Corporate Action"
-            if any(x in title_clean.lower() for x in ['profit', 'rise', 'surge', 'jump', 'beats']):
-                summary_tag = "🚀 Strong Earnings Impact"
-            elif any(x in title_clean.lower() for x in ['deal', 'order', 'bags', 'win', 'acquire']):
-                summary_tag = "💼 Order Win / Expansion"
-            elif any(x in title_clean.lower() for x in ['fall', 'drop', 'slump', 'loss']):
-                summary_tag = "📉 Negative Margin Pressure"
-                
-            news_items.append(f"• *[{summary_tag}]* [{title_clean}]({entry.link})")
-    except Exception as e:
-        print(f"⚠️ News pull error: {e}")
-    return "\n".join(news_items) if news_items else "• _No critical breaking updates detected_"
-
-def get_market_cap_category(mcap_str):
-    try:
-        mcap = float(mcap_str.replace('₹', '').replace('Cr', '').strip())
-        if mcap < 5000:
-            return "🔴 SMALL CAP"
-        elif 5000 <= mcap < 20000:
-            return "🟡 MID CAP"
-        else:
-            return "🟢 HIGH CAP (LARGE CAP)"
-    except:
-        return "⚪ CAP CATEGORY UNKNOWN"
-
-def generate_recommendation_rating(metrics, has_changed, dsij_tags):
-    score = 0
-    if metrics['FIIs'] > 0 or metrics['DIIs'] > 0:
-        score += 1
-    if dsij_tags:
-        score += 2
-    if metrics['Order_Book'] != "N/A":
-        score += 1
-
-    if score >= 3:
-        return "🔥 STRONG BUY (High Conviction Confluence)"
-    elif score == 2:
-        return "📈 ACCUMULATE / WATCH (Bullish Setup)"
-    else:
-        return "👀 HOLD / NEUTRAL (Awaiting Inflows)"
-
-def generate_donut_chart(stock_name, metrics):
-    labels = ['Promoters', 'FIIs', 'DIIs', 'Public']
-    sizes = [metrics.get(k, 0.0) for k in labels]
-    filtered_labels = [f"{l}\n({metrics[l]}%)" for l, s in zip(labels, sizes) if s > 0]
-    filtered_sizes = [s for s in sizes if s > 0]
-    colors = ['#1f77b4', '#2ca02c', '#bcbd22', '#ff7f0e']
-    
-    fig, ax = plt.subplots(figsize=(6, 6))
-    ax.pie(filtered_sizes, labels=filtered_labels, autopct='%1.2f%%', startangle=90,
-           colors=colors[:len(filtered_sizes)], pctdistance=0.75)
-    centre_circle = plt.Circle((0, 0), 0.50, fc='white')
-    fig.gca().add_artist(centre_circle)
-    ax.axis('equal')
-    plt.title(f"Shareholding Pattern - {stock_name}\n(Latest Quarter Overview)", fontsize=14, fontweight='bold', pad=20)
-    plt.tight_layout()
-    
-    safe_filename = "".join([c for c in stock_name if c.isalpha() or c.isdigit() or c == ' ']).rstrip()
-    local_path = os.path.join(CHARTS_DIR, f"{safe_filename.replace(' ', '_')}_shareholding.png")
-    plt.savefig(local_path, format='png', dpi=150)
-    
-    img_buf = io.BytesIO()
-    plt.savefig(img_buf, format='png', dpi=150)
-    img_buf.seek(0)
-    plt.close()
-    return img_buf
-
-def calculate_delta_signals(stock_name, current_metrics):
-    past = historical_db.get(stock_name, {})
-    if not past:
-        return "🆕 *Added to Tracking Watchlist*", True
-    updates, has_changed = [], False
-    for key in ['Promoters', 'FIIs', 'DIIs', 'Public']:
-        old_val = past.get(key, 0.0)
-        new_val = current_metrics.get(key, 0.0)
-        diff = round(new_val - old_val, 2)
-        if diff > 0:
-            updates.append(f"🟢 {key}: {new_val}% (+{diff}%)")
-            has_changed = True
-        elif diff < 0:
-            updates.append(f"🔴 {key}: {new_val}% ({diff}%)")
-            has_changed = True
-        else:
-            updates.append(f"⚫ {key}: {new_val}% (0.0%)")
-    return "\n".join(updates), has_changed
-
-def broadcast_telegram_visual_payload(msg, image_buffer):
+def send_telegram_message(text):
     if not TELEGRAM_TOKEN or not MY_CHAT_ID:
-        return
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
-    image_buffer.seek(0)
-    files = {'photo': ('shareholding.png', image_buffer.read(), 'image/png')}
-    payload = {'chat_id': MY_CHAT_ID, 'caption': msg, 'parse_mode': 'Markdown'}
+        print("❌ Telegram credentials missing")
+        return False
     try:
-        requests.post(url, data=payload, files=files, timeout=15)
+        res = requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+            data={
+                "chat_id": MY_CHAT_ID,
+                "text": text,
+                "parse_mode": "Markdown",
+                "disable_web_page_preview": True
+            },
+            timeout=15
+        )
+        print(f"Telegram response: {res.status_code}")
+        return res.status_code == 200
     except Exception as e:
-        print(f"Telegram Err: {e}")
-
-def broadcast_discord_payload(msg, image_buffer):
-    if not DISCORD_WEBHOOK_URL:
-        return
-    image_buffer.seek(0)
-    payload = {"content": msg}
-    files = {"file": ("shareholding.png", image_buffer.read(), "image/png")}
-    try:
-        requests.post(DISCORD_WEBHOOK_URL, data=payload, files=files, timeout=15)
-    except Exception as e:
-        print(f"Discord Err: {e}")
+        print(f"❌ Telegram Error: {e}")
+        return False
 
 def main():
-    # ========== HEARTBEAT TEST ==========
+    # ========== HEARTBEAT ==========
     print("🔄 Starting Heartbeat Test...")
-    
-    if not TELEGRAM_TOKEN or not MY_CHAT_ID:
-        print("❌ TELEGRAM_TOKEN or MY_CHAT_ID is missing!")
-        return
     
     heartbeat_msg = (
         "❤️ *Guru Screener Bot Heartbeat*\n\n"
@@ -343,85 +146,59 @@ def main():
         "Bot is ready and monitoring stocks."
     )
     
-    try:
-        res = requests.post(
-            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            data={
-                "chat_id": MY_CHAT_ID,
-                "text": heartbeat_msg,
-                "parse_mode": "Markdown"
-            },
-            timeout=15
-        )
-        print(f"Telegram response: {res.status_code}")
-        
-        if res.status_code == 200:
-            print("✅ Heartbeat message sent successfully!")
-        else:
-            print("❌ Failed to send heartbeat message")
-            print(res.text)
-    except Exception as e:
-        print(f"❌ Telegram Error: {e}")
-    
-    print("🔄 Heartbeat test completed. Starting full scan...")
-    # ========== END OF HEARTBEAT ==========
+    send_telegram_message(heartbeat_msg)
+    print("🔄 Heartbeat sent. Starting full scan...")
 
+    # ========== LOGIN & SCAN ==========
     screener_session = get_screener_session()
-    dsij_session = get_dsij_session()
     if not screener_session:
-        print("❌ Screener login failed")
+        send_telegram_message("❌ *Screener login failed!* Please check username/password secrets.")
         return
 
-    dsij_insights_db = fetch_dsij_insights(dsij_session)
-    active_screener_matches = scan_screener_urls(screener_session)
-    
-    for name, details in active_screener_matches.items():
-        try:
-            metrics = parse_shareholding_metrics(screener_session, details['url'])
-            if not metrics:
-                continue
-        except Exception:
-            continue
-        
-        delta_report_string, has_changed = calculate_delta_signals(name, metrics)
-        mc_news_summaries = fetch_moneycontrol_summaries(name)
-        
-        matched_dsij_tags = []
-        for raw_dsij_key, tags in dsij_insights_db.items():
-            if raw_dsij_key.lower() in name.lower() or name.lower() in raw_dsij_key.lower():
-                matched_dsij_tags.extend(tags)
-        
-        dsij_tag_str = ", ".join(set(matched_dsij_tags)) if matched_dsij_tags else "None detected"
-        holders = ", ".join(metrics['Top_Holders'][:2]) if metrics['Top_Holders'] else "None declared"
-        
-        cap_category = get_market_cap_category(metrics.get('Market_Cap_Value', '0'))
-        recommendation = generate_recommendation_rating(metrics, has_changed, list(set(matched_dsij_tags)))
-        
-        tele_msg = (
-            f"📌 *CATEGORY: {cap_category}*\n"
-            f"📊 *Stock Report: {name}*\n"
-            f"💰 Price: ₹{details['price']} | 📦 Order Book: {metrics['Order_Book']}\n"
-            f"📢 *RECOMMENDATION:* `{recommendation}`\n"
-            f"🎯 *DSIJ Trends:* `{dsij_tag_str}`\n"
-            f"👥 *Investors:* {holders}\n"
-            f"🔗 [Screener Profile]({details['url']})\n\n"
-            f"*Shareholding Activity:*\n{delta_report_string}\n\n"
-            f"*Summarized News Inputs:*\n{mc_news_summaries}"
+    active_stocks = scan_screener_urls(screener_session)
+
+    if not active_stocks:
+        send_telegram_message("⚠️ No stocks found in any screen today.")
+        return
+
+    # ========== SUMMARY MESSAGE ==========
+    summary = (
+        f"📊 *Scan Summary*\n\n"
+        f"✅ Total unique stocks found: *{len(active_stocks)}*\n"
+        f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n"
+        f"Sending top stocks below..."
+    )
+    send_telegram_message(summary)
+
+    # ========== SEND STOCK REPORTS (limit to 12) ==========
+    count = 0
+    for name, details in list(active_stocks.items())[:12]:
+        count += 1
+        price = details.get('price', 'N/A')
+        url = details.get('url', '')
+
+        msg = (
+            f"📌 *Stock #{count}*\n"
+            f"📊 *{name}*\n"
+            f"💰 Price: ₹{price}\n"
+            f"🔗 [View on Screener]({url})\n\n"
+            f"_Appeared in Guru Screens_"
         )
         
-        if len(tele_msg) > 1024:
-            tele_msg = tele_msg[:1010] + "..."
+        success = send_telegram_message(msg)
+        if success:
+            print(f"🚀 Sent report for {name}")
+        else:
+            print(f"❌ Failed to send {name}")
 
-        if has_changed or matched_dsij_tags or name not in historical_db:
-            chart_img = generate_donut_chart(name, metrics)
-            broadcast_telegram_visual_payload(tele_msg, chart_img)
-            broadcast_discord_payload(tele_msg, chart_img)
-            print(f"🚀 Dispatched filtered cap report for {name}")
-            
-        historical_db[name] = metrics
-
-    with open(HISTORY_FILE, "w") as f:
-        json.dump(historical_db, f, indent=4)
+    # Final message
+    final_msg = (
+        f"✅ *Scan Completed*\n\n"
+        f"Sent reports for top {count} stocks.\n"
+        f"Total stocks in screens: {len(active_stocks)}\n\n"
+        f"Bot will run again on next schedule."
+    )
+    send_telegram_message(final_msg)
 
     print("✅ Full scan completed")
 
