@@ -4,3 +4,4 @@ pandas
 feedparser
 matplotlib
 lxml
+streamlit
