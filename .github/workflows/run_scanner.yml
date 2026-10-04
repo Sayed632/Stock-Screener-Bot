@@ -29,7 +29,12 @@ jobs:
           MY_CHAT_ID: ${{ secrets.MY_CHAT_ID }}
           SCREENER_USERNAME: ${{ secrets.SCREENER_USERNAME }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
-          DSIJ_USERNAME: ${{ secrets.DSIJ_USERNAME }}
-          DSIJ_PASSWORD: ${{ secrets.DSIJ_PASSWORD }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python scanner.py
+
+      - name: Commit scan results
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add scan_results.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update scan results"
+          git push
