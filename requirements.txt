@@ -1,4 +1,6 @@
-lrequests
+streamlit
+requests
 beautifulsoup4
 feedparser
 lxml
+pandas
