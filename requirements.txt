@@ -1,7 +1,4 @@
-requests
+lrequests
 beautifulsoup4
-pandas
 feedparser
-matplotlib
 lxml
-streamlit
