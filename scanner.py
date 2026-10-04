@@ -4,7 +4,6 @@ import requests
 import feedparser
 from bs4 import BeautifulSoup
 from datetime import datetime
-import re
 
 def get_secret(key):
     val = os.environ.get(key)
@@ -85,6 +84,7 @@ def scan_screener_urls(session):
                     
                     if name not in all_stocks:
                         all_stocks[name] = {
+                            'name': name,
                             'url': f"https://www.screener.in{link_tag['href']}",
                             'price': price,
                             'screens': []
@@ -102,7 +102,6 @@ def scan_screener_urls(session):
     return all_stocks, screen_counts
 
 def get_news_for_stock(stock_name):
-    """Simple news intelligence using Google News RSS"""
     try:
         query = stock_name.replace(" ", "+")
         url = f"https://news.google.com/rss/search?q={query}+stock+OR+shares&hl=en-IN&gl=IN&ceid=IN:en"
@@ -110,29 +109,29 @@ def get_news_for_stock(stock_name):
         
         positive_keywords = ['order', 'win', 'bag', 'contract', 'profit', 'rise', 'surge', 'growth', 
                              'expand', 'capacity', 'result', 'beat', 'acquire', 'partnership']
-        negative_keywords = ['loss', 'fall', 'drop', 'decline', 'fraud', 'probe', 'penalty', 'resign']
+        negative_keywords = ['loss', 'fall', 'drop', 'decline', 'fraud', 'probe', 'penalty']
 
         news_items = []
         sentiment = "Neutral"
 
         for entry in feed.entries[:3]:
-            title = entry.title.lower()
-            if any(word in title for word in positive_keywords):
+            title = entry.title
+            title_lower = title.lower()
+            if any(word in title_lower for word in positive_keywords):
                 sentiment = "Positive"
-                news_items.append(f"🟢 {entry.title[:80]}")
-            elif any(word in title for word in negative_keywords):
+                news_items.append(f"🟢 {title[:90]}")
+            elif any(word in title_lower for word in negative_keywords):
                 sentiment = "Negative"
-                news_items.append(f"🔴 {entry.title[:80]}")
+                news_items.append(f"🔴 {title[:90]}")
             else:
-                news_items.append(f"⚪ {entry.title[:80]}")
+                news_items.append(f"⚪ {title[:90]}")
 
         return sentiment, news_items[:2]
-    except Exception as e:
+    except:
         return "Neutral", []
 
 def send_telegram_message(text):
     if not TELEGRAM_TOKEN or not MY_CHAT_ID:
-        print("❌ Telegram credentials missing")
         return False
     try:
         res = requests.post(
@@ -145,14 +144,12 @@ def send_telegram_message(text):
             },
             timeout=15
         )
-        print(f"Telegram response: {res.status_code}")
         return res.status_code == 200
     except Exception as e:
         print(f"❌ Telegram Error: {e}")
         return False
 
 def main():
-    # ========== HEARTBEAT ==========
     print("🔄 Starting Heartbeat...")
     
     heartbeat_msg = (
@@ -160,19 +157,14 @@ def main():
         "✅ Setup is working correctly!\n"
         f"📅 Time: `{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}`\n"
         f"📊 Screens Active: *8*\n"
-        "• High Piotroski\n"
-        "• Magic Formula\n"
-        "• Darvas Scan\n"
-        "• Jim Slater Zulu\n"
-        "• Driehaus Momentum\n"
-        "• Altman Z Score\n"
-        "• Crash Recovery\n"
+        "• High Piotroski  • Magic Formula\n"
+        "• Darvas  • Zulu  • Driehaus\n"
+        "• Altman Z  • Crash Recovery\n"
         "• Quality 40-80\n\n"
         "News Intelligence: Active"
     )
     send_telegram_message(heartbeat_msg)
 
-    # ========== LOGIN & SCAN ==========
     screener_session = get_screener_session()
     if not screener_session:
         send_telegram_message("❌ *Screener login failed!* Check secrets.")
@@ -184,22 +176,49 @@ def main():
         send_telegram_message("⚠️ No stocks found today.")
         return
 
-    # ========== SUMMARY ==========
+    # ========== SAVE RESULTS FOR STREAMLIT ==========
+    results_for_dashboard = {
+        "scan_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "total_stocks": len(active_stocks),
+        "screen_counts": screen_counts,
+        "stocks": []
+    }
+
+    for name, details in active_stocks.items():
+        results_for_dashboard["stocks"].append({
+            "name": name,
+            "price": details.get("price", "N/A"),
+            "screens": ", ".join(details.get("screens", [])),
+            "screen_count": len(details.get("screens", [])),
+            "url": details.get("url", "")
+        })
+
+    # Sort by number of screens
+    results_for_dashboard["stocks"] = sorted(
+        results_for_dashboard["stocks"],
+        key=lambda x: x["screen_count"],
+        reverse=True
+    )
+
+    with open("scan_results.json", "w") as f:
+        json.dump(results_for_dashboard, f, indent=2)
+    print("✅ scan_results.json saved for Streamlit")
+
+    # ========== TELEGRAM SUMMARY ==========
     summary = [f"📊 *Scan Summary* — {datetime.now().strftime('%d %b %Y %H:%M')}\n"]
     summary.append(f"✅ Total unique stocks: *{len(active_stocks)}*\n")
     for name, count in screen_counts.items():
         summary.append(f"• {name}: {count}")
-    summary.append("\nSending prioritized stocks with News Intelligence...")
+    summary.append("\nSending top stocks with News...")
     send_telegram_message("\n".join(summary))
 
-    # ========== PRIORITIZE ==========
+    # ========== SEND TOP STOCKS ==========
     sorted_stocks = sorted(
         active_stocks.items(),
         key=lambda x: len(x[1]['screens']),
         reverse=True
     )
 
-    # ========== SEND REPORTS (Top 12) ==========
     count = 0
     for name, details in sorted_stocks[:12]:
         count += 1
@@ -208,11 +227,9 @@ def main():
         screens = details.get('screens', [])
         screens_str = ", ".join(screens)
 
-        # News Intelligence
         sentiment, news_list = get_news_for_stock(name)
         news_text = "\n".join(news_list) if news_list else "• No major recent news"
 
-        # Special tags
         tags = []
         if "Crash Recovery" in screens:
             tags.append("🚀 Recovery")
@@ -234,18 +251,16 @@ def main():
             f"🏷 Screens: `{screens_str}`\n"
             f"{tags_str}\n"
             f"🔗 [Screener]({url})\n\n"
-            f"*News Intelligence:*\n{news_text}"
+            f"*News:*\n{news_text}"
         )
-
         send_telegram_message(msg)
         print(f"🚀 Sent: {name}")
 
-    # Final
     final_msg = (
         f"✅ *Scan Completed*\n\n"
-        f"Sent top {count} prioritized stocks with news.\n"
-        f"Total stocks: {len(active_stocks)}\n\n"
-        f"Bot ready for next run."
+        f"Sent top {count} stocks.\n"
+        f"Total: {len(active_stocks)}\n"
+        f"Dashboard data saved."
     )
     send_telegram_message(final_msg)
     print("✅ Full scan completed")
