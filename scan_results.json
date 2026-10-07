@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-10-06 10:42:42",
-  "total_stocks": 153,
+  "scan_time": "2026-10-07 10:31:26",
+  "total_stocks": 152,
   "screen_counts": {
     "High Piotroski": 25,
     "Magic Formula": 25,
@@ -14,301 +14,301 @@
   "stocks": [
     {
       "name": "GE Power",
-      "price": "730.90",
+      "price": "698.85",
       "screens": "High Piotroski, Magic Formula, Jim Slater Zulu, Driehaus Momentum",
       "screen_count": 4,
       "url": "https://www.screener.in/company/GVPIL/consolidated/"
     },
     {
+      "name": "One Global Serv",
+      "price": "586.00",
+      "screens": "Magic Formula, Jim Slater Zulu, Driehaus Momentum, Crash Recovery",
+      "screen_count": 4,
+      "url": "https://www.screener.in/company/ONEGLOBAL/"
+    },
+    {
       "name": "Indosolar",
-      "price": "207.00",
+      "price": "207.95",
       "screens": "High Piotroski, Magic Formula, Altman Z Score",
       "screen_count": 3,
       "url": "https://www.screener.in/company/WAAREEINDO/"
     },
     {
       "name": "Timex Group",
-      "price": "732.15",
+      "price": "722.05",
       "screens": "High Piotroski, Darvas Scan, Driehaus Momentum",
       "screen_count": 3,
       "url": "https://www.screener.in/company/TIMEX/"
     },
     {
+      "name": "Multi Comm. Exc.",
+      "price": "3360.05",
+      "screens": "High Piotroski, Darvas Scan, Driehaus Momentum",
+      "screen_count": 3,
+      "url": "https://www.screener.in/company/MCX/consolidated/"
+    },
+    {
       "name": "SPARC",
-      "price": "196.75",
+      "price": "197.45",
       "screens": "Magic Formula, Jim Slater Zulu, Altman Z Score",
       "screen_count": 3,
       "url": "https://www.screener.in/company/SPARC/"
     },
     {
-      "name": "One Global Serv",
-      "price": "564.85",
-      "screens": "Magic Formula, Jim Slater Zulu, Driehaus Momentum",
-      "screen_count": 3,
-      "url": "https://www.screener.in/company/ONEGLOBAL/"
-    },
-    {
-      "name": "Shukra Pharma.",
-      "price": "72.85",
-      "screens": "Darvas Scan, Driehaus Momentum, Crash Recovery",
-      "screen_count": 3,
-      "url": "https://www.screener.in/company/SHUKRAPHAR/"
-    },
-    {
       "name": "Gravity (India)",
-      "price": "13.49",
+      "price": "14.16",
       "screens": "High Piotroski, Altman Z Score",
       "screen_count": 2,
       "url": "https://www.screener.in/company/532015/"
     },
     {
       "name": "P & G Hygiene",
-      "price": "6896.90",
+      "price": "6914.50",
       "screens": "High Piotroski, Altman Z Score",
       "screen_count": 2,
       "url": "https://www.screener.in/company/PGHH/"
     },
     {
       "name": "TPI India",
-      "price": "18.98",
+      "price": "18.02",
       "screens": "High Piotroski, Altman Z Score",
       "screen_count": 2,
       "url": "https://www.screener.in/company/500421/"
     },
     {
-      "name": "Multi Comm. Exc.",
-      "price": "3315.00",
-      "screens": "High Piotroski, Darvas Scan",
-      "screen_count": 2,
-      "url": "https://www.screener.in/company/MCX/consolidated/"
-    },
-    {
       "name": "Hindustan Zinc",
-      "price": "558.30",
+      "price": "551.60",
       "screens": "High Piotroski, Magic Formula",
       "screen_count": 2,
       "url": "https://www.screener.in/company/HINDZINC/"
     },
     {
       "name": "Jeena Sikho",
-      "price": "443.10",
+      "price": "416.00",
       "screens": "High Piotroski, Magic Formula",
       "screen_count": 2,
       "url": "https://www.screener.in/company/JSLL/"
     },
     {
       "name": "Page Industries",
-      "price": "37650.05",
+      "price": "37471.50",
       "screens": "High Piotroski, Driehaus Momentum",
       "screen_count": 2,
       "url": "https://www.screener.in/company/PAGEIND/"
     },
     {
       "name": "HBL Engineering",
-      "price": "765.00",
+      "price": "760.00",
       "screens": "High Piotroski, Driehaus Momentum",
       "screen_count": 2,
       "url": "https://www.screener.in/company/HBLENGINE/consolidated/"
     },
     {
       "name": "String Metaverse",
-      "price": "7.32",
+      "price": "7.13",
       "screens": "High Piotroski, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/534535/consolidated/"
     },
     {
       "name": "Ksolves India",
-      "price": "251.20",
+      "price": "248.25",
       "screens": "Magic Formula, Altman Z Score",
       "screen_count": 2,
       "url": "https://www.screener.in/company/KSOLVES/"
     },
     {
       "name": "Waaree Renewab.",
-      "price": "824.20",
+      "price": "815.00",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/WAAREERTL/"
     },
     {
-      "name": "Stellant Secu.",
-      "price": "905.00",
+      "name": "Jindal Poly Inve",
+      "price": "896.10",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
-      "url": "https://www.screener.in/company/526071/"
+      "url": "https://www.screener.in/company/JPOLYINVST/consolidated/"
+    },
+    {
+      "name": "Websol Energy",
+      "price": "68.90",
+      "screens": "Magic Formula, Jim Slater Zulu",
+      "screen_count": 2,
+      "url": "https://www.screener.in/company/WEBELSOLAR/"
     },
     {
       "name": "Crizac",
-      "price": "169.90",
+      "price": "169.35",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/CRIZAC/consolidated/"
     },
     {
       "name": "Viviana Power",
-      "price": "824.20",
+      "price": "817.85",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/VIVIANA/"
     },
     {
       "name": "Kernex Microsys.",
-      "price": "1755.05",
+      "price": "1778.60",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/KERNEX/consolidated/"
     },
     {
       "name": "Rajesh Power",
-      "price": "755.00",
+      "price": "751.00",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/544291/"
     },
     {
       "name": "Alpex Solar",
-      "price": "814.15",
+      "price": "815.10",
       "screens": "Magic Formula, Jim Slater Zulu",
       "screen_count": 2,
       "url": "https://www.screener.in/company/ALPEXSOLAR/consolidated/"
     },
     {
       "name": "D.P. Abhushan",
-      "price": "2172.40",
+      "price": "2264.15",
       "screens": "Darvas Scan, Driehaus Momentum",
       "screen_count": 2,
       "url": "https://www.screener.in/company/DPABHUSHAN/"
     },
     {
-      "name": "TD Power Systems",
-      "price": "816.25",
+      "name": "Shukra Pharma.",
+      "price": "68.97",
       "screens": "Darvas Scan, Driehaus Momentum",
       "screen_count": 2,
-      "url": "https://www.screener.in/company/TDPOWERSYS/consolidated/"
+      "url": "https://www.screener.in/company/SHUKRAPHAR/"
     },
     {
-      "name": "Advit Jewels",
-      "price": "328.75",
+      "name": "Aditya Infotech",
+      "price": "4028.60",
       "screens": "Darvas Scan, Crash Recovery",
       "screen_count": 2,
-      "url": "https://www.screener.in/company/RAMBHAJO/"
+      "url": "https://www.screener.in/company/CPPLUS/consolidated/"
     },
     {
-      "name": "Raymond Realty",
-      "price": "707.20",
+      "name": "Sky Gold & Diam.",
+      "price": "878.00",
       "screens": "Darvas Scan, Crash Recovery",
       "screen_count": 2,
-      "url": "https://www.screener.in/company/RAYMONDREL/consolidated/"
-    },
-    {
-      "name": "Premier Polyfilm",
-      "price": "97.66",
-      "screens": "Darvas Scan, Crash Recovery",
-      "screen_count": 2,
-      "url": "https://www.screener.in/company/PREMIERPOL/"
+      "url": "https://www.screener.in/company/SKYGOLD/consolidated/"
     },
     {
       "name": "Rajasthan Securities",
-      "price": "59.40",
+      "price": "59.30",
       "screens": "Jim Slater Zulu, Driehaus Momentum",
       "screen_count": 2,
       "url": "https://www.screener.in/company/526873/"
     },
     {
+      "name": "Deepa Jewellers",
+      "price": "226.95",
+      "screens": "Jim Slater Zulu, Crash Recovery",
+      "screen_count": 2,
+      "url": "https://www.screener.in/company/DEEPA/"
+    },
+    {
       "name": "Sigma Solve",
-      "price": "45.88",
+      "price": "45.60",
       "screens": "Jim Slater Zulu, Quality 40-80",
       "screen_count": 2,
       "url": "https://www.screener.in/company/SIGMA/consolidated/"
     },
     {
       "name": "Golden Legand Ls",
-      "price": "7.91",
+      "price": "7.80",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/509024/"
     },
     {
       "name": "Goenka Business",
-      "price": "13.07",
+      "price": "12.42",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/538787/"
     },
     {
       "name": "GE Vernova T&D",
-      "price": "4260.00",
+      "price": "4300.10",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GVT&D/"
     },
     {
       "name": "Nexus Surgical",
-      "price": "33.69",
+      "price": "33.34",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/538874/"
     },
     {
       "name": "International Gemological Instit",
-      "price": "320.30",
+      "price": "317.05",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/IGIL/consolidated/"
     },
     {
       "name": "Swati Projects",
-      "price": "40.25",
+      "price": "42.14",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/543914/consolidated/"
     },
     {
       "name": "Glaxosmi. Pharma",
-      "price": "2755.00",
+      "price": "2635.20",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GLAXO/consolidated/"
     },
     {
       "name": "Tenneco Clean",
-      "price": "493.00",
+      "price": "480.35",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/TENNIND/consolidated/"
     },
     {
       "name": "Anand Rathi Wea.",
-      "price": "2151.95",
+      "price": "2125.00",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ANANDRATHI/"
     },
     {
       "name": "Hindustan Copper",
-      "price": "485.65",
+      "price": "479.95",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/HINDCOPPER/"
     },
     {
       "name": "Travel Food",
-      "price": "1200.00",
+      "price": "1185.90",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/TRAVELFOOD/consolidated/"
     },
     {
       "name": "Apana Logistics",
-      "price": "23.67",
+      "price": "22.49",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544910/"
     },
     {
       "name": "V-Marc India",
-      "price": "324.00",
+      "price": "326.95",
       "screens": "High Piotroski",
       "screen_count": 1,
       "url": "https://www.screener.in/company/VMARCIND/"
@@ -321,239 +321,253 @@
       "url": "https://www.screener.in/company/ETL/"
     },
     {
-      "name": "Jindal Poly Inve",
-      "price": "920.00",
-      "screens": "Magic Formula",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/JPOLYINVST/consolidated/"
-    },
-    {
-      "name": "Websol Energy",
-      "price": "71.08",
-      "screens": "Magic Formula",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/WEBELSOLAR/"
-    },
-    {
       "name": "TCS",
-      "price": "2098.00",
+      "price": "2084.00",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/TCS/consolidated/"
     },
     {
       "name": "Castrol India",
-      "price": "200.10",
+      "price": "197.15",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/CASTROLIND/"
     },
     {
       "name": "Swaraj Engines",
-      "price": "3545.30",
+      "price": "3552.55",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SWARAJENG/"
     },
     {
       "name": "Sanofi India",
-      "price": "3051.25",
+      "price": "3030.00",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SANOFI/"
     },
     {
       "name": "Indian Energy Ex",
-      "price": "104.75",
+      "price": "106.00",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/IEX/"
     },
     {
       "name": "Accelya Solution",
-      "price": "1109.55",
+      "price": "1100.00",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ACCELYA/consolidated/"
     },
     {
       "name": "Safe Enterprises",
-      "price": "250.05",
+      "price": "260.45",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SAFEENTP/consolidated/"
     },
     {
       "name": "Elitecon Inter.",
-      "price": "7.27",
+      "price": "7.54",
       "screens": "Magic Formula",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ELITECON/consolidated/"
     },
     {
+      "name": "Emmvee Photovol.",
+      "price": "305.95",
+      "screens": "Magic Formula",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/EMMVEE/consolidated/"
+    },
+    {
+      "name": "Shankara Buildpro",
+      "price": "1296.00",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/BUILDPRO/consolidated/"
+    },
+    {
       "name": "TIPCO Engineering",
-      "price": "322.00",
+      "price": "313.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544740/"
     },
     {
-      "name": "Metalic Technoforge",
-      "price": "172.90",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/METALIC/"
-    },
-    {
-      "name": "Kronox Lab",
-      "price": "207.05",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/KRONOX/"
-    },
-    {
       "name": "Sedemac Mechatro",
-      "price": "3400.95",
+      "price": "3417.10",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SEDEMAC/"
     },
     {
+      "name": "C P C L",
+      "price": "1611.70",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/CHENNPETRO/consolidated/"
+    },
+    {
+      "name": "TD Power Systems",
+      "price": "820.35",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/TDPOWERSYS/consolidated/"
+    },
+    {
       "name": "Shanti Gold",
-      "price": "337.25",
+      "price": "340.90",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SHANTIGOLD/"
     },
     {
       "name": "Cupid",
-      "price": "324.10",
+      "price": "344.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/CUPID/"
     },
     {
       "name": "Prec. Wires (I)",
-      "price": "512.95",
+      "price": "519.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/PRECWIRE/"
     },
     {
-      "name": "Steelcast",
-      "price": "367.65",
+      "name": "Advit Jewels",
+      "price": "360.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/STEELCAS/"
-    },
-    {
-      "name": "Apar Inds.",
-      "price": "18012.70",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/APARINDS/consolidated/"
+      "url": "https://www.screener.in/company/RAMBHAJO/"
     },
     {
       "name": "Quality Power El",
-      "price": "1641.35",
+      "price": "1615.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/QPOWER/consolidated/"
     },
     {
-      "name": "Modison",
-      "price": "492.60",
+      "name": "Raymond Realty",
+      "price": "704.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/MODISONLTD/consolidated/"
+      "url": "https://www.screener.in/company/RAYMONDREL/consolidated/"
     },
     {
       "name": "Global Education",
-      "price": "142.62",
+      "price": "144.79",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GLOBAL/"
     },
     {
-      "name": "Utssav CZ Gold",
-      "price": "860.75",
+      "name": "Premier Polyfilm",
+      "price": "101.05",
       "screens": "Darvas Scan",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/UTSSAV/"
+      "url": "https://www.screener.in/company/PREMIERPOL/"
     },
     {
       "name": "Yash Highvoltage",
-      "price": "1209.95",
+      "price": "1194.40",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544310/"
     },
     {
-      "name": "Aditya Infotech",
-      "price": "3964.70",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/CPPLUS/consolidated/"
-    },
-    {
       "name": "R R Kabel",
-      "price": "2790.00",
+      "price": "2735.00",
       "screens": "Darvas Scan",
       "screen_count": 1,
       "url": "https://www.screener.in/company/RRKABEL/consolidated/"
     },
     {
-      "name": "Prime Cable Ind.",
-      "price": "201.05",
+      "name": "Shreeji Ship. Gl",
+      "price": "802.60",
       "screens": "Darvas Scan",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/PRIMECAB/"
+      "url": "https://www.screener.in/company/SHREEJISPG/consolidated/"
+    },
+    {
+      "name": "Krishana Phosch.",
+      "price": "191.38",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/KRISHANA/"
+    },
+    {
+      "name": "Shivalik Bimetal",
+      "price": "1099.80",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/SBCL/consolidated/"
+    },
+    {
+      "name": "KMC Speciality",
+      "price": "183.30",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/KMCSHIL/"
     },
     {
       "name": "Adon Agro",
-      "price": "88.50",
+      "price": "92.70",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544809/"
     },
     {
+      "name": "Stellant Secu.",
+      "price": "874.00",
+      "screens": "Jim Slater Zulu",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/526071/"
+    },
+    {
+      "name": "Australian Prem",
+      "price": "230.00",
+      "screens": "Jim Slater Zulu",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/APS/"
+    },
+    {
       "name": "Unifinz Capital",
-      "price": "101.80",
+      "price": "102.60",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/541358/"
     },
     {
-      "name": "Deepa Jewellers",
-      "price": "214.25",
-      "screens": "Jim Slater Zulu",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/DEEPA/"
-    },
-    {
       "name": "Shankesh Jewellers",
-      "price": "92.06",
+      "price": "96.25",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SHANKESH/"
     },
     {
       "name": "Ardee Industries",
-      "price": "50.23",
+      "price": "50.82",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ARDEE/"
     },
     {
       "name": "Connplex Cinemas",
-      "price": "247.50",
+      "price": "256.65",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/CONNPLEX/"
     },
     {
       "name": "Parmeshwar Metal",
-      "price": "297.85",
+      "price": "308.05",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544330/"
@@ -567,210 +581,189 @@
     },
     {
       "name": "Garuda Cons",
-      "price": "175.00",
+      "price": "172.20",
       "screens": "Jim Slater Zulu",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GARUDA/"
     },
     {
-      "name": "California Soft.",
-      "price": "33.54",
-      "screens": "Jim Slater Zulu",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/CALSOFT/consolidated/"
-    },
-    {
-      "name": "Pramodini Medicare",
-      "price": "116.35",
-      "screens": "Jim Slater Zulu",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/PRAMODINI/consolidated/"
-    },
-    {
-      "name": "Apex Ecotech",
-      "price": "253.65",
-      "screens": "Jim Slater Zulu",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/APEXECO/"
-    },
-    {
       "name": "Spice IslandsInd",
-      "price": "103.95",
+      "price": "103.50",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/526827/"
     },
     {
+      "name": "BSE",
+      "price": "3356.00",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/BSE/consolidated/"
+    },
+    {
       "name": "Vivid Electromech",
-      "price": "1719.95",
+      "price": "1750.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/VIVIDEL/"
     },
     {
       "name": "Frontier Springs",
-      "price": "1390.10",
+      "price": "1447.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/FRONTSP/"
     },
     {
       "name": "Atlanta Electric",
-      "price": "1872.35",
+      "price": "1883.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ATLANTAELE/consolidated/"
     },
     {
       "name": "Sunshine Picture",
-      "price": "445.25",
+      "price": "448.05",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SUNSHINE/"
     },
     {
       "name": "Oriana Power Ltd",
-      "price": "303.30",
+      "price": "303.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ORIANA/consolidated/"
     },
     {
+      "name": "MPS",
+      "price": "2683.40",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/MPSLTD/consolidated/"
+    },
+    {
       "name": "Cospower Engine.",
-      "price": "3231.55",
+      "price": "3200.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/543172/"
     },
     {
       "name": "R M Drip & Sprin",
-      "price": "23.90",
+      "price": "22.99",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/RMDRIP/"
     },
     {
+      "name": "Solar Industries",
+      "price": "20020.90",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/SOLARINDS/consolidated/"
+    },
+    {
       "name": "Valiant Commun.",
-      "price": "1806.45",
+      "price": "1782.00",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/526775/consolidated/"
     },
     {
-      "name": "Susan Electrical",
-      "price": "301.10",
+      "name": "Sathlokhar Sys.",
+      "price": "388.30",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/544793/"
+      "url": "https://www.screener.in/company/SSEGL/"
     },
     {
       "name": "Vikram Thermo",
-      "price": "403.30",
+      "price": "388.10",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/530477/"
     },
     {
       "name": "Manorama Indust.",
-      "price": "1984.95",
+      "price": "1997.45",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/MANORAMA/"
     },
     {
       "name": "GRE Renew",
-      "price": "229.00",
+      "price": "234.85",
       "screens": "Driehaus Momentum",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544682/"
     },
     {
-      "name": "eClerx Services",
-      "price": "1918.70",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/ECLERX/consolidated/"
-    },
-    {
-      "name": "Bansal Roofing",
-      "price": "165.05",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/538546/"
-    },
-    {
-      "name": "Persistent Systems",
-      "price": "5518.00",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/PERSISTENT/consolidated/"
-    },
-    {
       "name": "SRM Energy Ltd",
-      "price": "28.88",
+      "price": "30.32",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/523222/"
     },
     {
       "name": "Eureka Industrie",
-      "price": "6.37",
+      "price": "6.68",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/521137/"
     },
     {
       "name": "Magnus Steel",
-      "price": "28.71",
+      "price": "30.14",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/517320/"
     },
     {
       "name": "Harig Crankshaft",
-      "price": "42.78",
+      "price": "43.63",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/500178/"
     },
     {
       "name": "Tips Music",
-      "price": "653.60",
+      "price": "638.05",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/TIPSMUSIC/"
     },
     {
       "name": "Grand Foundry",
-      "price": "35.35",
+      "price": "36.05",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GFSTEELS/"
     },
     {
       "name": "ICICI AMC",
-      "price": "3075.00",
+      "price": "3047.10",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ICICIAMC/"
     },
     {
       "name": "ENS Enterprises",
-      "price": "101.50",
+      "price": "101.30",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544876/"
     },
     {
       "name": "Galaxy Supermarket",
-      "price": "18.56",
+      "price": "19.44",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/506186/"
     },
     {
       "name": "Simca Advertis.",
-      "price": "317.10",
+      "price": "321.95",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SIMCA/"
@@ -784,14 +777,14 @@
     },
     {
       "name": "Colgate-Palmoliv",
-      "price": "1804.90",
+      "price": "1760.00",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/COLPAL/"
     },
     {
       "name": "Infrax Renewable",
-      "price": "115.50",
+      "price": "120.80",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544919/"
@@ -805,196 +798,196 @@
     },
     {
       "name": "Kartik Invest.",
-      "price": "7087.00",
+      "price": "6740.00",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/501151/"
     },
     {
       "name": "Omega Ag Seeds",
-      "price": "9.14",
+      "price": "8.69",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/519479/"
     },
     {
       "name": "Gillette India",
-      "price": "7068.40",
+      "price": "7232.00",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/GILLETTE/"
     },
     {
       "name": "Sanofi Consumer",
-      "price": "3730.10",
+      "price": "3725.60",
       "screens": "Altman Z Score",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SANOFICONR/"
     },
     {
       "name": "Vans Electroengineerings",
-      "price": "",
+      "price": "235.40",
       "screens": "Altman Z Score",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/id/1286223/"
+      "url": "https://www.screener.in/company/544971/"
     },
     {
-      "name": "Technocrats Plasma",
-      "price": "434.10",
+      "name": "Lohia Corp",
+      "price": "625.50",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/544877/"
+      "url": "https://www.screener.in/company/LCL/consolidated/"
     },
     {
-      "name": "Kanohar Elect.",
-      "price": "955.00",
+      "name": "Bondada Engineer",
+      "price": "296.00",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/KANOHAR/"
+      "url": "https://www.screener.in/company/543971/consolidated/"
     },
     {
-      "name": "Sahana Systems",
-      "price": "926.60",
+      "name": "ADC India",
+      "price": "2400.00",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/SAHANA/consolidated/"
+      "url": "https://www.screener.in/company/523411/"
     },
     {
-      "name": "Prizor Viztech",
-      "price": "1316.35",
+      "name": "Pajson Agro",
+      "price": "289.95",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/PRIZOR/consolidated/"
-    },
-    {
-      "name": "Knack Packaging",
-      "price": "196.35",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/KNACK/"
-    },
-    {
-      "name": "LG Electronics",
-      "price": "1757.90",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/LGEINDIA/"
+      "url": "https://www.screener.in/company/544657/"
     },
     {
       "name": "Krishna Defence",
-      "price": "1312.30",
+      "price": "1242.10",
       "screens": "Crash Recovery",
       "screen_count": 1,
       "url": "https://www.screener.in/company/KRISHNADEF/"
     },
     {
-      "name": "Dhoot Transmission",
-      "price": "1472.00",
+      "name": "Axtel Industries",
+      "price": "437.15",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/DHOOTTRANS/consolidated/"
+      "url": "https://www.screener.in/company/AXTEL/"
     },
     {
-      "name": "Expleo Solutions",
-      "price": "881.00",
+      "name": "TAAL Tech",
+      "price": "1106.80",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/EXPLEOSOL/consolidated/"
+      "url": "https://www.screener.in/company/TAALTECH/consolidated/"
+    },
+    {
+      "name": "Jamna Auto Inds.",
+      "price": "151.90",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/JAMNAAUTO/consolidated/"
+    },
+    {
+      "name": "Amal",
+      "price": "797.00",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/AMAL/consolidated/"
+    },
+    {
+      "name": "Rajputana Stain.",
+      "price": "174.60",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/RSL/"
+    },
+    {
+      "name": "Mayur Uniquoters",
+      "price": "761.10",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "url": "https://www.screener.in/company/MAYURUNIQ/consolidated/"
     },
     {
       "name": "Rajoo Engineers",
-      "price": "57.00",
+      "price": "62.34",
       "screens": "Crash Recovery",
       "screen_count": 1,
       "url": "https://www.screener.in/company/RAJOOENG/consolidated/"
     },
     {
-      "name": "PNGS Reva Diamo.",
-      "price": "549.10",
+      "name": "Axis Solution",
+      "price": "652.65",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/PNGSREVA/"
+      "url": "https://www.screener.in/company/511144/"
     },
     {
-      "name": "EPack PrefabTech",
-      "price": "247.25",
+      "name": "Petronet LNG",
+      "price": "296.75",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/EPACKPEB/consolidated/"
+      "url": "https://www.screener.in/company/PETRONET/consolidated/"
     },
     {
-      "name": "Supreme Power",
-      "price": "239.45",
+      "name": "Danish Power",
+      "price": "1059.40",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/SUPREMEPWR/"
+      "url": "https://www.screener.in/company/DANISH/"
     },
     {
-      "name": "Sri Lotus",
-      "price": "244.00",
+      "name": "Hexagon Nutri.",
+      "price": "72.00",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/LOTUSDEV/consolidated/"
+      "url": "https://www.screener.in/company/HEXAGON/"
     },
     {
-      "name": "Z-Tech (India)",
-      "price": "488.15",
+      "name": "Basilic Fly Stud",
+      "price": "216.75",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/ZTECH/"
+      "url": "https://www.screener.in/company/BASILIC/consolidated/"
     },
     {
-      "name": "Aeroflex",
-      "price": "558.50",
+      "name": "Fine Organic",
+      "price": "5632.25",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/AEROFLEX/consolidated/"
+      "url": "https://www.screener.in/company/FINEORG/consolidated/"
     },
     {
-      "name": "Share India Sec.",
-      "price": "212.00",
+      "name": "Namo eWaste",
+      "price": "372.85",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/SHAREINDIA/consolidated/"
+      "url": "https://www.screener.in/company/NAMOEWASTE/consolidated/"
     },
     {
-      "name": "Marine Electric.",
-      "price": "478.85",
+      "name": "Elantas Beck",
+      "price": "14007.75",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/MARINE/consolidated/"
+      "url": "https://www.screener.in/company/ELANTAS/"
     },
     {
-      "name": "United Polyfab",
-      "price": "49.10",
+      "name": "Pradeep Metals",
+      "price": "624.95",
       "screens": "Crash Recovery",
       "screen_count": 1,
-      "url": "https://www.screener.in/company/UNITEDPOLY/"
-    },
-    {
-      "name": "Kody Technolab",
-      "price": "1556.55",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/KODYTECH/consolidated/"
-    },
-    {
-      "name": "Cello World",
-      "price": "370.65",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "url": "https://www.screener.in/company/CELLO/consolidated/"
+      "url": "https://www.screener.in/company/PRADPME/consolidated/"
     },
     {
       "name": "Adcounty Media.",
-      "price": "75.80",
+      "price": "79.95",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/544435/"
     },
     {
       "name": "NMDC",
-      "price": "74.30",
+      "price": "72.86",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/NMDC/consolidated/"
@@ -1008,7 +1001,7 @@
     },
     {
       "name": "Radhika Jeweltec",
-      "price": "67.70",
+      "price": "69.20",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/RADHIKAJWE/"
@@ -1022,63 +1015,63 @@
     },
     {
       "name": "TPL Plastech",
-      "price": "69.49",
+      "price": "68.71",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/TPLPLASTEH/"
     },
     {
       "name": "Mahendra Realtor",
-      "price": "68.60",
+      "price": "69.00",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/MRIL/"
     },
     {
       "name": "Emerald Finance",
-      "price": "57.40",
+      "price": "57.59",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/538882/consolidated/"
     },
     {
       "name": "Clear Secured",
-      "price": "77.25",
+      "price": "78.20",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/CSSL/consolidated/"
     },
     {
       "name": "Shalibhadra Fin.",
-      "price": "77.88",
+      "price": "76.91",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SAHLIBHFI/"
     },
     {
       "name": "Rubfila Intl.",
-      "price": "63.97",
+      "price": "65.05",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/RUBFILA/"
     },
     {
       "name": "Orient Ceratech",
-      "price": "44.20",
+      "price": "43.09",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/ORIENTCER/consolidated/"
     },
     {
       "name": "Plaza Wires",
-      "price": "58.87",
+      "price": "57.50",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/PLAZACABLE/"
     },
     {
       "name": "Spectrum Talent",
-      "price": "60.40",
+      "price": "60.10",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "url": "https://www.screener.in/company/SPECTSTM/consolidated/"
