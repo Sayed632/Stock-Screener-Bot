@@ -1,142 +1,159 @@
 """
-swing_strategy.py
-Reusable swing trading rules (Afzal + Porwal style)
+swing_scanner.py
+Sends Swing Trading Recommendations to Telegram (with Indian Time)
 """
 
-from dataclasses import dataclass
-from typing import Optional
+import os
+import requests
+import yfinance as yf
 import pandas as pd
-import numpy as np
+from datetime import datetime
+from zoneinfo import ZoneInfo
+from swing_strategy import SwingStrategy
 
 
-@dataclass
-class Signal:
-    entry: float
-    stop: float
-    target: float
-    risk_per_share: float
-    reward_per_share: float
-    rr_ratio: float
-    reason: str
-    atr: float
+def get_secret(key):
+    return os.environ.get(key)
 
 
-class SwingStrategy:
-    def __init__(
-        self,
-        risk_pct: float = 0.01,
-        rr_ratio: float = 3.0,
-        ema_fast: int = 20,
-        ema_slow: int = 50,
-        atr_period: int = 14,
-        atr_multiplier: float = 2.5,
-        max_pullback_pct: float = 0.015,
-        volume_mult: float = 1.2,
-        max_hold_days: int = 15,
-    ):
-        self.risk_pct = risk_pct
-        self.rr_ratio = rr_ratio
-        self.ema_fast = ema_fast
-        self.ema_slow = ema_slow
-        self.atr_period = atr_period
-        self.atr_multiplier = atr_multiplier
-        self.max_pullback_pct = max_pullback_pct
-        self.volume_mult = volume_mult
-        self.max_hold_days = max_hold_days
+TELEGRAM_TOKEN = get_secret("TELEGRAM_TOKEN")
+MY_CHAT_ID = get_secret("MY_CHAT_ID")
 
-    def add_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
-        df = df.copy()
-        df.columns = [c.capitalize() for c in df.columns]
+if not TELEGRAM_TOKEN or not MY_CHAT_ID:
+    print("❌ Telegram secrets missing")
+    exit(1)
 
-        df["EMA20"] = df["Close"].ewm(span=self.ema_fast, adjust=False).mean()
-        df["EMA50"] = df["Close"].ewm(span=self.ema_slow, adjust=False).mean()
 
-        tr = pd.concat([
-            df["High"] - df["Low"],
-            (df["High"] - df["Close"].shift()).abs(),
-            (df["Low"] - df["Close"].shift()).abs()
-        ], axis=1).max(axis=1)
-        df["ATR"] = tr.rolling(self.atr_period).mean()
-        df["Vol_MA20"] = df["Volume"].rolling(20).mean()
-        df["EMA50_rising"] = df["EMA50"] > df["EMA50"].shift(1)
+CAPITAL = 1_000_000
+RISK_PCT = 0.01
+MAX_SIGNALS_TO_SEND = 8
 
-        return df
+# Indian Timezone
+IST = ZoneInfo("Asia/Kolkata")
 
-    def generate_signal(self, df: pd.DataFrame) -> Optional[Signal]:
-        if len(df) < self.ema_slow + 5:
-            return None
+SWING_UNIVERSE = [
+    "RELIANCE.NS", "HDFCBANK.NS", "ICICIBANK.NS", "SBIN.NS", "KOTAKBANK.NS",
+    "AXISBANK.NS", "INFY.NS", "TCS.NS", "HCLTECH.NS", "LT.NS",
+    "ADANIPORTS.NS", "SUNPHARMA.NS", "DRREDDY.NS", "DIVISLAB.NS",
+    "MARUTI.NS", "M&M.NS", "TITAN.NS", "BHARTIARTL.NS", "NTPC.NS",
+    "POWERGRID.NS", "BAJFINANCE.NS", "TATAMOTORS.NS", "WIPRO.NS",
+    "ULTRACEMCO.NS", "INDUSINDBK.NS"
+]
 
-        df = self.add_indicators(df)
-        df = df.dropna()
 
-        if len(df) < 2:
-            return None
+def get_ist_time():
+    """Return current time in Indian Standard Time"""
+    return datetime.now(IST).strftime('%d %b %Y • %I:%M %p IST')
 
-        curr = df.iloc[-1]
-        prev = df.iloc[-2]
 
-        if not (curr["Close"] > curr["EMA50"] and curr["EMA50_rising"]):
-            return None
+def send_telegram(message: str):
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    payload = {
+        "chat_id": MY_CHAT_ID,
+        "text": message,
+        "parse_mode": "Markdown",
+        "disable_web_page_preview": True,
+    }
+    try:
+        requests.post(url, json=payload, timeout=15)
+    except Exception as e:
+        print(f"Telegram error: {e}")
 
-        distance_to_ema20 = abs(curr["Close"] - curr["EMA20"]) / curr["EMA20"]
-        near_ema20 = distance_to_ema20 <= self.max_pullback_pct
-        reclaim = curr["Close"] > curr["EMA20"] and prev["Close"] <= prev["EMA20"]
-        volume_ok = curr["Volume"] >= (curr["Vol_MA20"] * self.volume_mult)
 
-        if not (near_ema20 and reclaim and volume_ok):
-            return None
+def get_clean_name(symbol: str) -> str:
+    return symbol.replace(".NS", "").replace(".BO", "")
 
-        entry = float(curr["Close"])
-        structural_stop = float(curr["Low"])
-        atr_stop = entry - (self.atr_multiplier * float(curr["ATR"]))
-        stop = max(structural_stop, atr_stop)
 
-        if stop >= entry:
-            stop = entry - (1.5 * float(curr["ATR"]))
+def scan_swing_setups():
+    strategy = SwingStrategy(risk_pct=RISK_PCT, rr_ratio=3.0)
+    signals = []
 
-        risk_per_share = entry - stop
-        if risk_per_share <= 0:
-            return None
+    print(f"Scanning {len(SWING_UNIVERSE)} stocks...")
 
-        target = entry + (risk_per_share * self.rr_ratio)
+    for symbol in SWING_UNIVERSE:
+        try:
+            df = yf.download(symbol, period="6mo", interval="1d",
+                             progress=False, auto_adjust=True)
 
-        return Signal(
-            entry=round(entry, 2),
-            stop=round(stop, 2),
-            target=round(target, 2),
-            risk_per_share=round(risk_per_share, 2),
-            reward_per_share=round(target - entry, 2),
-            rr_ratio=self.rr_ratio,
-            reason="Trend + EMA20 pullback reclaim + volume",
-            atr=round(float(curr["ATR"]), 2),
+            if df.empty or len(df) < 60:
+                continue
+
+            if isinstance(df.columns, pd.MultiIndex):
+                df.columns = df.columns.get_level_values(0)
+
+            plan = strategy.get_trade_plan(df, capital=CAPITAL)
+
+            if plan:
+                plan["symbol"] = symbol
+                plan["name"] = get_clean_name(symbol)
+                signals.append(plan)
+                print(f"  Setup found: {plan['name']}")
+        except Exception as e:
+            print(f"  Error {symbol}: {e}")
+
+    return signals
+
+
+def format_signal_message(plan: dict, index: int) -> str:
+    risk_pct = ((plan["entry"] - plan["stop"]) / plan["entry"]) * 100
+    reward_pct = ((plan["target"] - plan["entry"]) / plan["entry"]) * 100
+
+    msg = (
+        f"🎯 *Swing Trading Recommendation #{index}*\n\n"
+        f"📊 *{plan['name']}*\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
+        f"🟢 *Entry*     : ₹{plan['entry']}\n"
+        f"🔴 *Stop Loss* : ₹{plan['stop']}  ({risk_pct:.1f}%)\n"
+        f"🎯 *Target*    : ₹{plan['target']}  ({reward_pct:.1f}%)\n"
+        f"📈 *Risk:Reward* : 1 : {plan['rr_ratio']}\n"
+        f"📦 *Quantity*  : {plan['shares']} shares\n"
+        f"💰 *Risk Amount* : ₹{plan['risk_amount']:,.0f}\n"
+        f"💎 *Reward Potential* : ₹{plan['reward_amount']:,.0f}\n"
+        f"━━━━━━━━━━━━━━━━━━━━\n"
+        f"📌 Strategy: Trend + Near EMA20 + Volume\n"
+        f"⏱ Max Holding: {plan['max_hold_days']} days\n"
+        f"📅 {get_ist_time()}"
+    )
+    return msg
+
+
+def main():
+    print("🚀 Swing Trading Scanner Started")
+    signals = scan_swing_setups()
+
+    if not signals:
+        send_telegram(
+            "📭 *Swing Trading Scanner*\n\n"
+            "No high-quality swing setups found today.\n\n"
+            f"Checked {len(SWING_UNIVERSE)} liquid stocks.\n"
+            f"📅 {get_ist_time()}"
         )
+        print("No setups found.")
+        return
 
-    def position_size(self, entry: float, stop: float, capital: float) -> int:
-        risk_amount = capital * self.risk_pct
-        risk_per_share = abs(entry - stop)
-        if risk_per_share <= 0:
-            return 0
-        shares = int(risk_amount / risk_per_share)
-        return max(shares, 0)
+    signals = signals[:MAX_SIGNALS_TO_SEND]
 
-    def get_trade_plan(self, df: pd.DataFrame, capital: float) -> Optional[dict]:
-        signal = self.generate_signal(df)
-        if signal is None:
-            return None
+    summary = (
+        f"🎯 *Swing Trading Recommendations*\n\n"
+        f"✅ Found *{len(signals)}* high-quality setups\n"
+        f"💰 Capital : ₹{CAPITAL:,}\n"
+        f"⚠️ Risk per trade : {RISK_PCT*100}%\n"
+        f"📅 {get_ist_time()}\n"
+        f"━━━━━━━━━━━━━━━━━━━━━━━━"
+    )
+    send_telegram(summary)
 
-        shares = self.position_size(signal.entry, signal.stop, capital)
-        if shares == 0:
-            return None
+    for i, plan in enumerate(signals, 1):
+        send_telegram(format_signal_message(plan, i))
+        print(f"Sent: {plan['name']}")
 
-        return {
-            "entry": signal.entry,
-            "stop": signal.stop,
-            "target": signal.target,
-            "shares": shares,
-            "risk_amount": round(shares * signal.risk_per_share, 2),
-            "reward_amount": round(shares * signal.reward_per_share, 2),
-            "rr_ratio": signal.rr_ratio,
-            "reason": signal.reason,
-            "atr": signal.atr,
-            "max_hold_days": self.max_hold_days,
-        }
+    send_telegram(
+        f"✅ *Swing Scan Complete*\n\n"
+        f"Total recommendations sent: *{len(signals)}*\n"
+        f"📅 {get_ist_time()}"
+    )
+    print("✅ Done")
+
+
+if __name__ == "__main__":
+    main()
