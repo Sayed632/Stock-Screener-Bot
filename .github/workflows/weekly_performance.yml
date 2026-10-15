@@ -1,0 +1,36 @@
+name: Weekly Performance Report
+
+on:
+  schedule:
+    - cron: '30 3 * * 0'   # Every Sunday 9:00 AM IST
+  workflow_dispatch:
+
+jobs:
+  performance-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests yfinance pandas
+
+      - name: Run Performance Check
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          MY_CHAT_ID: ${{ secrets.MY_CHAT_ID }}
+        run: python performance_check.py
+
+      - name: Commit updated log (if any)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add performance_log.json || true
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update performance log"
+          git push || true
