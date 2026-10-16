@@ -135,21 +135,40 @@ def send_telegram(text):
         print(f"Telegram error: {e}")
         return False
 
-def is_high_priority(screens):
-    if len(screens) >= 3:
-        return True
-    if "Crash Recovery" in screens:
-        return True
-    if "Swing Pick" in screens:
-        return True
-    if "High FII + Promoter" in screens:
-        return True
-    if "Quality 40-80" in screens and len(screens) >= 2:
-        return True
-    return False
+def calculate_score(screens, sentiment):
+    """Weighted score out of 10"""
+    score = 0.0
+    screens_set = set(screens)
 
-def log_performance(stock_name, price, screens, tags):
-    """Automatically log high-priority recommendations for performance tracking"""
+    # High quality fundamental / institutional
+    if "High FII + Promoter" in screens_set:
+        score += 2.0
+    if "High Piotroski" in screens_set or "Magic Formula" in screens_set:
+        score += 2.0
+
+    # Technical / Momentum
+    if "Crash Recovery" in screens_set:
+        score += 1.5
+    if "Swing Pick" in screens_set:
+        score += 1.5
+
+    # Multi-screen bonus
+    if len(screens_set) >= 3:
+        score += 1.0
+
+    # News sentiment
+    if sentiment == "Positive":
+        score += 1.0
+
+    # Extra quality
+    if "Altman Z Score" in screens_set or "Quality 40-80" in screens_set:
+        score += 0.5
+
+    # Cap at 10
+    return min(round(score, 1), 10.0)
+
+def log_performance(stock_name, price, screens, tags, score, priority):
+    """Log all stocks (including low score) for backend monitoring"""
     log_file = "performance_log.json"
     try:
         if os.path.exists(log_file):
@@ -158,43 +177,50 @@ def log_performance(stock_name, price, screens, tags):
         else:
             log = []
 
-        # Avoid duplicate logging of same stock on same day
         today = datetime.now().strftime("%Y-%m-%d")
+        # Update if already logged today, else add new
+        updated = False
         for entry in log:
             if entry.get("name") == stock_name and entry.get("date") == today:
-                return
+                entry["score"] = score
+                entry["priority"] = priority
+                entry["screens"] = screens
+                entry["tags"] = tags
+                entry["entry_price"] = price
+                updated = True
+                break
 
-        entry = {
-            "name": stock_name,
-            "date": today,
-            "entry_price": price,
-            "screens": screens,
-            "tags": tags,
-            "logged_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        }
-        log.append(entry)
+        if not updated:
+            entry = {
+                "name": stock_name,
+                "date": today,
+                "entry_price": price,
+                "screens": screens,
+                "tags": tags,
+                "score": score,
+                "priority": priority,
+                "logged_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            }
+            log.append(entry)
 
         with open(log_file, "w") as f:
             json.dump(log, f, indent=2)
-        print(f"📝 Logged for performance: {stock_name}")
+        print(f"📝 Logged: {stock_name} | Score: {score} | Priority: {priority}")
     except Exception as e:
         print(f"⚠️ Performance log error: {e}")
 
 def main():
-    print("🔄 Starting...")
+    print("🔄 Starting Weighted Scoring Scanner...")
 
     heartbeat = (
         "❤️ *Guru Screener Bot*\n\n"
         f"✅ Running at `{datetime.now().strftime('%Y-%m-%d %H:%M')}`\n"
-        "📊 10 Screens Active\n"
-        "• High Piotroski  • Magic Formula\n"
-        "• Darvas  • Zulu  • Driehaus\n"
-        "• Altman Z  • Crash Recovery\n"
-        "• Quality 40-80  • Swing Pick\n"
-        "• High FII + Promoter\n\n"
-        "🔔 Telegram: High-priority stocks only\n"
-        "📈 Full list → Streamlit Dashboard\n"
-        "📊 Performance tracking: Active"
+        "📊 10 Screens Active + Weighted Scoring\n\n"
+        "🎯 Priority System:\n"
+        "• Score ≥ 6.0 → High Priority\n"
+        "• Score 4.0–5.9 → Medium Priority\n"
+        "• Score < 4.0 → Backend monitoring only\n\n"
+        "📈 Full list → Streamlit Dashboard"
     )
     send_telegram(heartbeat)
 
@@ -209,48 +235,18 @@ def main():
         send_telegram("⚠️ No stocks found today.")
         return
 
-    # Save for Streamlit
-    results = {
-        "scan_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "total_stocks": len(stocks),
-        "screen_counts": counts,
-        "stocks": []
-    }
+    # Process all stocks with scoring
+    scored_stocks = []
     for name, data in stocks.items():
-        results["stocks"].append({
-            "name": name,
-            "price": data["price"],
-            "screens": ", ".join(data["screens"]),
-            "screen_count": len(data["screens"]),
-            "url": data["url"]
-        })
-    results["stocks"] = sorted(results["stocks"], key=lambda x: x["screen_count"], reverse=True)
-
-    with open("scan_results.json", "w") as f:
-        json.dump(results, f, indent=2)
-    print("✅ scan_results.json saved")
-
-    # Summary
-    summary = [f"📊 *Scan Summary* — {datetime.now().strftime('%d %b %H:%M')}\n"]
-    summary.append(f"Total unique stocks: *{len(stocks)}*\n")
-    for k, v in counts.items():
-        summary.append(f"• {k}: {v}")
-    summary.append("\nSending high-priority stocks...")
-    send_telegram("\n".join(summary))
-
-    # Send high-priority stocks
-    sorted_stocks = sorted(stocks.items(), key=lambda x: len(x[1]["screens"]), reverse=True)
-    sent = 0
-    for name, data in sorted_stocks:
-        if not is_high_priority(data["screens"]):
-            continue
-        sent += 1
-        if sent > 15:
-            break
-
-        screens_str = ", ".join(data["screens"])
         sentiment, news = get_news(name)
-        news_text = "\n".join(news) if news else "• No major news"
+        score = calculate_score(data["screens"], sentiment)
+
+        if score >= 6.0:
+            priority = "High"
+        elif score >= 4.0:
+            priority = "Medium"
+        else:
+            priority = "Low"
 
         tags = []
         if "Crash Recovery" in data["screens"]:
@@ -268,34 +264,103 @@ def main():
         elif sentiment == "Negative":
             tags.append("⚠️ News-")
 
-        # Special heading
-        if "High FII + Promoter" in data["screens"]:
-            heading = "🏛 *HIGH FII + PROMOTER*"
-        elif "Swing Pick" in data["screens"]:
-            heading = "📈 *SWING PICK*"
-        else:
-            heading = f"📌 *High Priority #{sent}*"
+        scored_stocks.append({
+            "name": name,
+            "price": data["price"],
+            "url": data["url"],
+            "screens": data["screens"],
+            "screens_str": ", ".join(data["screens"]),
+            "score": score,
+            "priority": priority,
+            "tags": tags,
+            "sentiment": sentiment,
+            "news": news
+        })
 
-        msg = (
-            f"{heading}\n"
-            f"📊 *{name}*\n"
-            f"💰 ₹{data['price']}\n"
-            f"🏷 `{screens_str}`\n"
-            f"{' | '.join(tags)}\n"
-            f"🔗 [Screener]({data['url']})\n\n"
-            f"*News:*\n{news_text}"
-        )
-        send_telegram(msg)
-        print(f"🚀 Sent: {name}")
+        # Log everything (including Low priority) for backend monitoring
+        log_performance(name, data["price"], data["screens"], tags, score, priority)
 
-        # ===== AUTO PERFORMANCE LOGGING =====
-        log_performance(name, data["price"], data["screens"], tags)
+    # Sort by score descending
+    scored_stocks = sorted(scored_stocks, key=lambda x: x["score"], reverse=True)
+
+    # Save for Streamlit
+    results = {
+        "scan_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "total_stocks": len(stocks),
+        "screen_counts": counts,
+        "stocks": [
+            {
+                "name": s["name"],
+                "price": s["price"],
+                "screens": s["screens_str"],
+                "screen_count": len(s["screens"]),
+                "score": s["score"],
+                "priority": s["priority"],
+                "url": s["url"]
+            } for s in scored_stocks
+        ]
+    }
+    with open("scan_results.json", "w") as f:
+        json.dump(results, f, indent=2)
+    print("✅ scan_results.json saved")
+
+    # Summary
+    high_list = [s for s in scored_stocks if s["priority"] == "High"]
+    medium_list = [s for s in scored_stocks if s["priority"] == "Medium"]
+    low_count = len([s for s in scored_stocks if s["priority"] == "Low"])
+
+    summary = (
+        f"📊 *Scan Summary* — {datetime.now().strftime('%d %b %H:%M')}\n\n"
+        f"Total unique stocks: *{len(stocks)}*\n"
+        f"🔴 High Priority (≥6): *{len(high_list)}*\n"
+        f"🟡 Medium Priority (4–5.9): *{len(medium_list)}*\n"
+        f"⚪ Backend only (<4): *{low_count}*\n\n"
+        "Sending High & Medium priority stocks..."
+    )
+    send_telegram(summary)
+
+    # ===== HIGH PRIORITY MESSAGES =====
+    if high_list:
+        send_telegram("🔴 *HIGH PRIORITY STOCKS* (Score ≥ 6.0)\n" + "─" * 20)
+        for i, s in enumerate(high_list[:12], 1):
+            news_text = "\n".join(s["news"]) if s["news"] else "• No major news"
+            msg = (
+                f"🔴 *HIGH PRIORITY #{i}*\n"
+                f"📊 *{s['name']}*\n"
+                f"💰 ₹{s['price']}\n"
+                f"⭐ Score: *{s['score']}/10*\n"
+                f"🏷 `{s['screens_str']}`\n"
+                f"{' | '.join(s['tags'])}\n"
+                f"🔗 [Screener]({s['url']})\n\n"
+                f"*News:*\n{news_text}"
+            )
+            send_telegram(msg)
+            print(f"🔴 High: {s['name']} ({s['score']})")
+
+    # ===== MEDIUM PRIORITY MESSAGES =====
+    if medium_list:
+        send_telegram("🟡 *MEDIUM PRIORITY STOCKS* (Score 4.0 – 5.9)\n" + "─" * 20)
+        for i, s in enumerate(medium_list[:10], 1):
+            news_text = "\n".join(s["news"]) if s["news"] else "• No major news"
+            msg = (
+                f"🟡 *MEDIUM PRIORITY #{i}*\n"
+                f"📊 *{s['name']}*\n"
+                f"💰 ₹{s['price']}\n"
+                f"⭐ Score: *{s['score']}/10*\n"
+                f"🏷 `{s['screens_str']}`\n"
+                f"{' | '.join(s['tags'])}\n"
+                f"🔗 [Screener]({s['url']})\n\n"
+                f"*News:*\n{news_text}"
+            )
+            send_telegram(msg)
+            print(f"🟡 Medium: {s['name']} ({s['score']})")
 
     final = (
-        f"✅ *Scan Done*\n\n"
-        f"High-priority stocks sent: {sent}\n"
-        f"Total stocks in dashboard: {len(stocks)}\n"
-        f"📝 Performance logging: Active"
+        f"✅ *Scan Completed*\n\n"
+        f"🔴 High Priority sent: {min(len(high_list), 12)}\n"
+        f"🟡 Medium Priority sent: {min(len(medium_list), 10)}\n"
+        f"⚪ Backend monitoring: {low_count}\n"
+        f"📝 All stocks logged for performance tracking"
     )
     send_telegram(final)
     print("✅ Completed")
