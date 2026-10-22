@@ -1,10 +1,12 @@
 """
 swing_scanner.py
 Sends Swing Trading Recommendations to Telegram (with Indian Time)
++ Logs recommendations for performance tracking
 Expanded Universe: Nifty 50 + Nifty 100 + Liquid Nifty 200
 """
 
 import os
+import json
 import requests
 import yfinance as yf
 import pandas as pd
@@ -86,6 +88,38 @@ def get_clean_name(symbol: str) -> str:
     return symbol.replace(".NS", "").replace(".BO", "")
 
 
+def log_recommendation(name, entry_price, screens=None):
+    """Save recommendation to performance_log.json"""
+    log_file = "performance_log.json"
+    try:
+        if os.path.exists(log_file):
+            with open(log_file, "r") as f:
+                log = json.load(f)
+        else:
+            log = []
+    except:
+        log = []
+
+    today = datetime.now(IST).strftime("%Y-%m-%d")
+    
+    # Avoid duplicate for same stock on same day
+    for entry in log:
+        if entry.get("name") == name and entry.get("date") == today:
+            return
+
+    log.append({
+        "date": today,
+        "name": name,
+        "entry_price": entry_price,
+        "screens": screens or ["Swing"]
+    })
+
+    with open(log_file, "w") as f:
+        json.dump(log, f, indent=2)
+    
+    print(f"📝 Logged: {name} @ ₹{entry_price}")
+
+
 def scan_swing_setups():
     strategy = SwingStrategy(risk_pct=RISK_PCT, rr_ratio=3.0)
     signals = []
@@ -109,6 +143,10 @@ def scan_swing_setups():
                 plan["symbol"] = symbol
                 plan["name"] = get_clean_name(symbol)
                 signals.append(plan)
+                
+                # Log for performance tracking
+                log_recommendation(plan["name"], plan["entry"], screens=["Swing"])
+                
                 print(f"  Setup found: {plan['name']}")
         except Exception as e:
             print(f"  Error {symbol}: {e}")
