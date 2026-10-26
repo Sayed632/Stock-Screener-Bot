@@ -7047,5 +7047,21 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-10-26 09:18:49"
+  },
+  {
+    "date": "2026-10-26",
+    "name": "KOTAKBANK",
+    "entry_price": 440.75,
+    "screens": [
+      "Swing"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "name": "ZYDUSLIFE",
+    "entry_price": 1160.4,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
