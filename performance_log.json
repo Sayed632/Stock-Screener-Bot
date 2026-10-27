@@ -9383,5 +9383,21 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-10-27 09:18:37"
+  },
+  {
+    "date": "2026-10-27",
+    "name": "HAL",
+    "entry_price": 4855.0,
+    "screens": [
+      "Swing"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "name": "TVSMOTOR",
+    "entry_price": 4087.0,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
