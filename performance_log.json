@@ -19737,5 +19737,2644 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-11-02 11:38:14"
+  },
+  {
+    "name": "Gravity (India)",
+    "date": "2026-11-03",
+    "entry_price": "15.54",
+    "screens": [
+      "High Piotroski",
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:22"
+  },
+  {
+    "name": "P & G Hygiene",
+    "date": "2026-11-03",
+    "entry_price": "7074.00",
+    "screens": [
+      "High Piotroski",
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:23"
+  },
+  {
+    "name": "Indosolar",
+    "date": "2026-11-03",
+    "entry_price": "195.25",
+    "screens": [
+      "High Piotroski",
+      "Magic Formula",
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udd25 Multi-Screen"
+    ],
+    "score": 3.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:23"
+  },
+  {
+    "name": "TPI India",
+    "date": "2026-11-03",
+    "entry_price": "11.86",
+    "screens": [
+      "High Piotroski",
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:23"
+  },
+  {
+    "name": "Golden Legand Ls",
+    "date": "2026-11-03",
+    "entry_price": "6.12",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:23"
+  },
+  {
+    "name": "Goenka Business",
+    "date": "2026-11-03",
+    "entry_price": "12.00",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:24"
+  },
+  {
+    "name": "Timex Group",
+    "date": "2026-11-03",
+    "entry_price": "668.20",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:24"
+  },
+  {
+    "name": "GE Power",
+    "date": "2026-11-03",
+    "entry_price": "586.50",
+    "screens": [
+      "High Piotroski",
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.0,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:24"
+  },
+  {
+    "name": "GE Vernova T&D",
+    "date": "2026-11-03",
+    "entry_price": "4044.00",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:25"
+  },
+  {
+    "name": "Multi Comm. Exc.",
+    "date": "2026-11-03",
+    "entry_price": "3493.00",
+    "screens": [
+      "High Piotroski",
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:25"
+  },
+  {
+    "name": "Nexus Surgical",
+    "date": "2026-11-03",
+    "entry_price": "20.31",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:25"
+  },
+  {
+    "name": "Hindustan Zinc",
+    "date": "2026-11-03",
+    "entry_price": "525.00",
+    "screens": [
+      "High Piotroski",
+      "Magic Formula"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:25"
+  },
+  {
+    "name": "International Gemological Instit",
+    "date": "2026-11-03",
+    "entry_price": "407.00",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:26"
+  },
+  {
+    "name": "Jeena Sikho",
+    "date": "2026-11-03",
+    "entry_price": "343.00",
+    "screens": [
+      "High Piotroski",
+      "Magic Formula"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:26"
+  },
+  {
+    "name": "Page Industries",
+    "date": "2026-11-03",
+    "entry_price": "35269.45",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:27"
+  },
+  {
+    "name": "Swati Projects",
+    "date": "2026-11-03",
+    "entry_price": "50.63",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:27"
+  },
+  {
+    "name": "Glaxosmi. Pharma",
+    "date": "2026-11-03",
+    "entry_price": "2572.35",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:27"
+  },
+  {
+    "name": "Tenneco Clean",
+    "date": "2026-11-03",
+    "entry_price": "457.45",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:28"
+  },
+  {
+    "name": "HBL Engineering",
+    "date": "2026-11-03",
+    "entry_price": "816.05",
+    "screens": [
+      "High Piotroski",
+      "Driehaus Momentum",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 6.0,
+    "priority": "High",
+    "logged_at": "2026-11-03 11:15:28"
+  },
+  {
+    "name": "Anand Rathi Wea.",
+    "date": "2026-11-03",
+    "entry_price": "2285.15",
+    "screens": [
+      "High Piotroski",
+      "Driehaus Momentum",
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 5.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:28"
+  },
+  {
+    "name": "Sham Foam",
+    "date": "2026-11-03",
+    "entry_price": "86.05",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:29"
+  },
+  {
+    "name": "String Metaverse",
+    "date": "2026-11-03",
+    "entry_price": "6.65",
+    "screens": [
+      "High Piotroski",
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:29"
+  },
+  {
+    "name": "Hindustan Copper",
+    "date": "2026-11-03",
+    "entry_price": "400.45",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:29"
+  },
+  {
+    "name": "Travel Food",
+    "date": "2026-11-03",
+    "entry_price": "1147.00",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:30"
+  },
+  {
+    "name": "Apana Logistics",
+    "date": "2026-11-03",
+    "entry_price": "18.50",
+    "screens": [
+      "High Piotroski"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:30"
+  },
+  {
+    "name": "SPARC",
+    "date": "2026-11-03",
+    "entry_price": "175.35",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu",
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:31"
+  },
+  {
+    "name": "One Global Serv",
+    "date": "2026-11-03",
+    "entry_price": "445.00",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:31"
+  },
+  {
+    "name": "Waaree Renewab.",
+    "date": "2026-11-03",
+    "entry_price": "696.80",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:31"
+  },
+  {
+    "name": "Stellant Secu.",
+    "date": "2026-11-03",
+    "entry_price": "975.00",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu",
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udd25 Multi-Screen"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:32"
+  },
+  {
+    "name": "Emkay Tools",
+    "date": "2026-11-03",
+    "entry_price": "1140.00",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:32"
+  },
+  {
+    "name": "Jindal Poly Inve",
+    "date": "2026-11-03",
+    "entry_price": "897.75",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:32"
+  },
+  {
+    "name": "Websol Energy",
+    "date": "2026-11-03",
+    "entry_price": "67.20",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:33"
+  },
+  {
+    "name": "TCS",
+    "date": "2026-11-03",
+    "entry_price": "2502.60",
+    "screens": [
+      "Magic Formula",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 5.0,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:33"
+  },
+  {
+    "name": "Castrol India",
+    "date": "2026-11-03",
+    "entry_price": "194.10",
+    "screens": [
+      "Magic Formula",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 5.0,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:33"
+  },
+  {
+    "name": "Swaraj Engines",
+    "date": "2026-11-03",
+    "entry_price": "3464.65",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:34"
+  },
+  {
+    "name": "Sanofi India",
+    "date": "2026-11-03",
+    "entry_price": "3383.25",
+    "screens": [
+      "Magic Formula",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 5.0,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:34"
+  },
+  {
+    "name": "Unifinz Capital",
+    "date": "2026-11-03",
+    "entry_price": "132.10",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu",
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.0,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:34"
+  },
+  {
+    "name": "Crizac",
+    "date": "2026-11-03",
+    "entry_price": "143.75",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:35"
+  },
+  {
+    "name": "Indian Energy Ex",
+    "date": "2026-11-03",
+    "entry_price": "108.75",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:35"
+  },
+  {
+    "name": "Deepa Jewellers",
+    "date": "2026-11-03",
+    "entry_price": "202.30",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:36"
+  },
+  {
+    "name": "Viviana Power",
+    "date": "2026-11-03",
+    "entry_price": "708.15",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:36"
+  },
+  {
+    "name": "Accelya Solution",
+    "date": "2026-11-03",
+    "entry_price": "945.00",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:37"
+  },
+  {
+    "name": "Kernex Microsys.",
+    "date": "2026-11-03",
+    "entry_price": "1580.00",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:37"
+  },
+  {
+    "name": "Rajesh Power",
+    "date": "2026-11-03",
+    "entry_price": "795.70",
+    "screens": [
+      "Magic Formula",
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:38"
+  },
+  {
+    "name": "Safe Enterprises",
+    "date": "2026-11-03",
+    "entry_price": "225.65",
+    "screens": [
+      "Magic Formula"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:38"
+  },
+  {
+    "name": "Sunlite Recycli.",
+    "date": "2026-11-03",
+    "entry_price": "610.15",
+    "screens": [
+      "Magic Formula",
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 3.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:39"
+  },
+  {
+    "name": "Shukra Pharma.",
+    "date": "2026-11-03",
+    "entry_price": "80.00",
+    "screens": [
+      "Darvas Scan",
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:39"
+  },
+  {
+    "name": "C P C L",
+    "date": "2026-11-03",
+    "entry_price": "1540.85",
+    "screens": [
+      "Darvas Scan",
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 5.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:15:39"
+  },
+  {
+    "name": "Cupid",
+    "date": "2026-11-03",
+    "entry_price": "338.05",
+    "screens": [
+      "Darvas Scan",
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:40"
+  },
+  {
+    "name": "Acutaas Chemical",
+    "date": "2026-11-03",
+    "entry_price": "3896.90",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:40"
+  },
+  {
+    "name": "Yash Highvoltage",
+    "date": "2026-11-03",
+    "entry_price": "1266.00",
+    "screens": [
+      "Darvas Scan",
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:41"
+  },
+  {
+    "name": "Rubicon Research",
+    "date": "2026-11-03",
+    "entry_price": "1720.90",
+    "screens": [
+      "Darvas Scan",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:41"
+  },
+  {
+    "name": "Shreeji Ship. Gl",
+    "date": "2026-11-03",
+    "entry_price": "847.30",
+    "screens": [
+      "Darvas Scan",
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:41"
+  },
+  {
+    "name": "Krishana Phosch.",
+    "date": "2026-11-03",
+    "entry_price": "231.88",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:41"
+  },
+  {
+    "name": "Menon Bearings",
+    "date": "2026-11-03",
+    "entry_price": "322.90",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:42"
+  },
+  {
+    "name": "Coforge",
+    "date": "2026-11-03",
+    "entry_price": "2062.00",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:42"
+  },
+  {
+    "name": "Sri Lotus",
+    "date": "2026-11-03",
+    "entry_price": "241.60",
+    "screens": [
+      "Darvas Scan",
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:43"
+  },
+  {
+    "name": "Bhagyanagar Ind",
+    "date": "2026-11-03",
+    "entry_price": "85.29",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:43"
+  },
+  {
+    "name": "GNG Electronics",
+    "date": "2026-11-03",
+    "entry_price": "691.70",
+    "screens": [
+      "Darvas Scan",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:43"
+  },
+  {
+    "name": "U. Y. Fincorp",
+    "date": "2026-11-03",
+    "entry_price": "29.89",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:44"
+  },
+  {
+    "name": "M B Agro Prod.",
+    "date": "2026-11-03",
+    "entry_price": "184.03",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:44"
+  },
+  {
+    "name": "Garware Hi Tech",
+    "date": "2026-11-03",
+    "entry_price": "7400.00",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:44"
+  },
+  {
+    "name": "Laurus Labs",
+    "date": "2026-11-03",
+    "entry_price": "2320.00",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:45"
+  },
+  {
+    "name": "Durlax Top",
+    "date": "2026-11-03",
+    "entry_price": "77.60",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:45"
+  },
+  {
+    "name": "SBC Exports",
+    "date": "2026-11-03",
+    "entry_price": "66.93",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:45"
+  },
+  {
+    "name": "Gretex Corporate",
+    "date": "2026-11-03",
+    "entry_price": "774.55",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:46"
+  },
+  {
+    "name": "Steel Str. Wheel",
+    "date": "2026-11-03",
+    "entry_price": "513.90",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:46"
+  },
+  {
+    "name": "Gland Pharma",
+    "date": "2026-11-03",
+    "entry_price": "3152.90",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:46"
+  },
+  {
+    "name": "Sona BLW Precis.",
+    "date": "2026-11-03",
+    "entry_price": "902.00",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:47"
+  },
+  {
+    "name": "Rane (Madras)",
+    "date": "2026-11-03",
+    "entry_price": "1318.40",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:47"
+  },
+  {
+    "name": "Sh.Pushkar Chem.",
+    "date": "2026-11-03",
+    "entry_price": "624.05",
+    "screens": [
+      "Darvas Scan"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:47"
+  },
+  {
+    "name": "Adon Agro",
+    "date": "2026-11-03",
+    "entry_price": "104.03",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:48"
+  },
+  {
+    "name": "Rajasthan Securities",
+    "date": "2026-11-03",
+    "entry_price": "60.10",
+    "screens": [
+      "Jim Slater Zulu",
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:48"
+  },
+  {
+    "name": "Complete Sports and Management",
+    "date": "2026-11-03",
+    "entry_price": "173.00",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:48"
+  },
+  {
+    "name": "Australian Prem",
+    "date": "2026-11-03",
+    "entry_price": "234.15",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:49"
+  },
+  {
+    "name": "Shankesh Jewellers",
+    "date": "2026-11-03",
+    "entry_price": "90.68",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:49"
+  },
+  {
+    "name": "Ardee Industries",
+    "date": "2026-11-03",
+    "entry_price": "45.14",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:49"
+  },
+  {
+    "name": "Career Point Edu",
+    "date": "2026-11-03",
+    "entry_price": "162.10",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:50"
+  },
+  {
+    "name": "Sigma Solve",
+    "date": "2026-11-03",
+    "entry_price": "43.00",
+    "screens": [
+      "Jim Slater Zulu",
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:50"
+  },
+  {
+    "name": "Connplex Cinemas",
+    "date": "2026-11-03",
+    "entry_price": "230.50",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:50"
+  },
+  {
+    "name": "Parmeshwar Metal",
+    "date": "2026-11-03",
+    "entry_price": "267.00",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:51"
+  },
+  {
+    "name": "Savy Infra",
+    "date": "2026-11-03",
+    "entry_price": "120.00",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:51"
+  },
+  {
+    "name": "Om Power Transmission",
+    "date": "2026-11-03",
+    "entry_price": "130.80",
+    "screens": [
+      "Jim Slater Zulu"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:51"
+  },
+  {
+    "name": "Tips Music",
+    "date": "2026-11-03",
+    "entry_price": "788.95",
+    "screens": [
+      "Driehaus Momentum",
+      "Altman Z Score",
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udd25 Multi-Screen",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 6.0,
+    "priority": "High",
+    "logged_at": "2026-11-03 11:15:52"
+  },
+  {
+    "name": "Kartik Invest.",
+    "date": "2026-11-03",
+    "entry_price": "8421.00",
+    "screens": [
+      "Driehaus Momentum",
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:52"
+  },
+  {
+    "name": "Spice IslandsInd",
+    "date": "2026-11-03",
+    "entry_price": "131.35",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:52"
+  },
+  {
+    "name": "BSE",
+    "date": "2026-11-03",
+    "entry_price": "3665.70",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:53"
+  },
+  {
+    "name": "Kanohar Elect.",
+    "date": "2026-11-03",
+    "entry_price": "1024.85",
+    "screens": [
+      "Driehaus Momentum",
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:53"
+  },
+  {
+    "name": "Nidhi Granites",
+    "date": "2026-11-03",
+    "entry_price": "264.80",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:53"
+  },
+  {
+    "name": "Frontier Springs",
+    "date": "2026-11-03",
+    "entry_price": "1345.00",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:54"
+  },
+  {
+    "name": "HDFC AMC",
+    "date": "2026-11-03",
+    "entry_price": "2432.00",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:54"
+  },
+  {
+    "name": "Glenmark Pharma.",
+    "date": "2026-11-03",
+    "entry_price": "2405.00",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:55"
+  },
+  {
+    "name": "ACE Alpha Tech",
+    "date": "2026-11-03",
+    "entry_price": "157.50",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:56"
+  },
+  {
+    "name": "Cospower Engine.",
+    "date": "2026-11-03",
+    "entry_price": "2935.10",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:56"
+  },
+  {
+    "name": "Solar Industries",
+    "date": "2026-11-03",
+    "entry_price": "19620.10",
+    "screens": [
+      "Driehaus Momentum",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:56"
+  },
+  {
+    "name": "Lalithaa Jewel",
+    "date": "2026-11-03",
+    "entry_price": "362.75",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:57"
+  },
+  {
+    "name": "Nisus Finance",
+    "date": "2026-11-03",
+    "entry_price": "181.95",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:57"
+  },
+  {
+    "name": "Workmates Core2",
+    "date": "2026-11-03",
+    "entry_price": "445.50",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:57"
+  },
+  {
+    "name": "Msafe Equipments",
+    "date": "2026-11-03",
+    "entry_price": "275.10",
+    "screens": [
+      "Driehaus Momentum",
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:58"
+  },
+  {
+    "name": "Purple Wave Info",
+    "date": "2026-11-03",
+    "entry_price": "472.25",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [],
+    "score": 0.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:58"
+  },
+  {
+    "name": "Gokul Agro",
+    "date": "2026-11-03",
+    "entry_price": "217.45",
+    "screens": [
+      "Driehaus Momentum"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:58"
+  },
+  {
+    "name": "SRM Energy Ltd",
+    "date": "2026-11-03",
+    "entry_price": "28.84",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:59"
+  },
+  {
+    "name": "Eureka Industrie",
+    "date": "2026-11-03",
+    "entry_price": "7.46",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:59"
+  },
+  {
+    "name": "Magnus Steel",
+    "date": "2026-11-03",
+    "entry_price": "15.38",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:15:59"
+  },
+  {
+    "name": "Ksolves India",
+    "date": "2026-11-03",
+    "entry_price": "208.40",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:00"
+  },
+  {
+    "name": "Harig Crankshaft",
+    "date": "2026-11-03",
+    "entry_price": "62.24",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:00"
+  },
+  {
+    "name": "Tikona Communication",
+    "date": "2026-11-03",
+    "entry_price": "36.02",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:00"
+  },
+  {
+    "name": "ICICI AMC",
+    "date": "2026-11-03",
+    "entry_price": "2867.60",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:01"
+  },
+  {
+    "name": "ENS Enterprises",
+    "date": "2026-11-03",
+    "entry_price": "125.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:01"
+  },
+  {
+    "name": "Galaxy Supermarket",
+    "date": "2026-11-03",
+    "entry_price": "18.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:01"
+  },
+  {
+    "name": "TeleCanor Global",
+    "date": "2026-11-03",
+    "entry_price": "13.71",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:02"
+  },
+  {
+    "name": "Simca Advertis.",
+    "date": "2026-11-03",
+    "entry_price": "489.45",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:02"
+  },
+  {
+    "name": "Rap Corp",
+    "date": "2026-11-03",
+    "entry_price": "33.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:02"
+  },
+  {
+    "name": "Colgate-Palmoliv",
+    "date": "2026-11-03",
+    "entry_price": "1631.95",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:03"
+  },
+  {
+    "name": "Infrax Renewable",
+    "date": "2026-11-03",
+    "entry_price": "136.25",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:03"
+  },
+  {
+    "name": "MPF Systems",
+    "date": "2026-11-03",
+    "entry_price": "13.72",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:03"
+  },
+  {
+    "name": "Omega Ag Seeds",
+    "date": "2026-11-03",
+    "entry_price": "8.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:04"
+  },
+  {
+    "name": "Gillette India",
+    "date": "2026-11-03",
+    "entry_price": "7195.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:04"
+  },
+  {
+    "name": "Sanofi Consumer",
+    "date": "2026-11-03",
+    "entry_price": "3457.00",
+    "screens": [
+      "Altman Z Score"
+    ],
+    "tags": [
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:04"
+  },
+  {
+    "name": "Britannia Inds.",
+    "date": "2026-11-03",
+    "entry_price": "4915.80",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:05"
+  },
+  {
+    "name": "Motherson Wiring",
+    "date": "2026-11-03",
+    "entry_price": "38.94",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:05"
+  },
+  {
+    "name": "Macfos",
+    "date": "2026-11-03",
+    "entry_price": "1111.80",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:06"
+  },
+  {
+    "name": "Xtranet Techno.",
+    "date": "2026-11-03",
+    "entry_price": "276.40",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:06"
+  },
+  {
+    "name": "Emami",
+    "date": "2026-11-03",
+    "entry_price": "381.95",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:06"
+  },
+  {
+    "name": "TAAL Tech",
+    "date": "2026-11-03",
+    "entry_price": "995.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:07"
+  },
+  {
+    "name": "Lloyds Metals",
+    "date": "2026-11-03",
+    "entry_price": "1780.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:07"
+  },
+  {
+    "name": "Disa India",
+    "date": "2026-11-03",
+    "entry_price": "11690.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:07"
+  },
+  {
+    "name": "Asian Paints",
+    "date": "2026-11-03",
+    "entry_price": "2431.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:08"
+  },
+  {
+    "name": "Rajputana Stain.",
+    "date": "2026-11-03",
+    "entry_price": "169.15",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:08"
+  },
+  {
+    "name": "Mayur Uniquoters",
+    "date": "2026-11-03",
+    "entry_price": "747.05",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:09"
+  },
+  {
+    "name": "Veedol Corporat",
+    "date": "2026-11-03",
+    "entry_price": "1409.05",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:09"
+  },
+  {
+    "name": "Chembond Chemic.",
+    "date": "2026-11-03",
+    "entry_price": "214.30",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:09"
+  },
+  {
+    "name": "Aryaman Fin.Serv",
+    "date": "2026-11-03",
+    "entry_price": "669.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:10"
+  },
+  {
+    "name": "Berger Paints",
+    "date": "2026-11-03",
+    "entry_price": "479.50",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:10"
+  },
+  {
+    "name": "Uno Minda",
+    "date": "2026-11-03",
+    "entry_price": "1125.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:10"
+  },
+  {
+    "name": "Transport Corp.",
+    "date": "2026-11-03",
+    "entry_price": "875.20",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:11"
+  },
+  {
+    "name": "CEAT",
+    "date": "2026-11-03",
+    "entry_price": "3328.25",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:11"
+  },
+  {
+    "name": "Manika Plastech",
+    "date": "2026-11-03",
+    "entry_price": "49.87",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:12"
+  },
+  {
+    "name": "I O C L",
+    "date": "2026-11-03",
+    "entry_price": "138.50",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:12"
+  },
+  {
+    "name": "Piccadily Agro",
+    "date": "2026-11-03",
+    "entry_price": "590.00",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:13"
+  },
+  {
+    "name": "Affle 3i",
+    "date": "2026-11-03",
+    "entry_price": "1580.90",
+    "screens": [
+      "Crash Recovery"
+    ],
+    "tags": [
+      "\ud83d\ude80 Recovery"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:13"
+  },
+  {
+    "name": "Adcounty Media.",
+    "date": "2026-11-03",
+    "entry_price": "72.85",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:14"
+  },
+  {
+    "name": "NMDC",
+    "date": "2026-11-03",
+    "entry_price": "68.12",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:14"
+  },
+  {
+    "name": "Star Imaging",
+    "date": "2026-11-03",
+    "entry_price": "68.00",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:15"
+  },
+  {
+    "name": "Radhika Jeweltec",
+    "date": "2026-11-03",
+    "entry_price": "62.25",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:15"
+  },
+  {
+    "name": "Shri Techtex",
+    "date": "2026-11-03",
+    "entry_price": "56.30",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:15"
+  },
+  {
+    "name": "TPL Plastech",
+    "date": "2026-11-03",
+    "entry_price": "64.32",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:15"
+  },
+  {
+    "name": "Mahendra Realtor",
+    "date": "2026-11-03",
+    "entry_price": "56.45",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:16"
+  },
+  {
+    "name": "Emerald Finance",
+    "date": "2026-11-03",
+    "entry_price": "52.60",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:16"
+  },
+  {
+    "name": "Retaggio Indust.",
+    "date": "2026-11-03",
+    "entry_price": "59.30",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:17"
+  },
+  {
+    "name": "Clear Secured",
+    "date": "2026-11-03",
+    "entry_price": "68.85",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:17"
+  },
+  {
+    "name": "Modern Malleable",
+    "date": "2026-11-03",
+    "entry_price": "42.00",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:17"
+  },
+  {
+    "name": "Shalibhadra Fin.",
+    "date": "2026-11-03",
+    "entry_price": "72.75",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:17"
+  },
+  {
+    "name": "Sonam",
+    "date": "2026-11-03",
+    "entry_price": "71.92",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:18"
+  },
+  {
+    "name": "Rubfila Intl.",
+    "date": "2026-11-03",
+    "entry_price": "54.00",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:18"
+  },
+  {
+    "name": "S D Retail",
+    "date": "2026-11-03",
+    "entry_price": "76.00",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:18"
+  },
+  {
+    "name": "Grovy India",
+    "date": "2026-11-03",
+    "entry_price": "58.52",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:19"
+  },
+  {
+    "name": "Plaza Wires",
+    "date": "2026-11-03",
+    "entry_price": "50.36",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 0.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:19"
+  },
+  {
+    "name": "Spectrum Talent",
+    "date": "2026-11-03",
+    "entry_price": "56.05",
+    "screens": [
+      "Quality 40-80"
+    ],
+    "tags": [
+      "\ud83d\udc8e 40-80",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:20"
+  },
+  {
+    "name": "Marico",
+    "date": "2026-11-03",
+    "entry_price": "873.20",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:16:20"
+  },
+  {
+    "name": "Corona Remedies",
+    "date": "2026-11-03",
+    "entry_price": "2286.45",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:20"
+  },
+  {
+    "name": "Steelcast",
+    "date": "2026-11-03",
+    "entry_price": "364.30",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:21"
+  },
+  {
+    "name": "Hind.Aeronautics",
+    "date": "2026-11-03",
+    "entry_price": "4960.00",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:16:21"
+  },
+  {
+    "name": "Algoquant Fin",
+    "date": "2026-11-03",
+    "entry_price": "77.25",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:21"
+  },
+  {
+    "name": "Tanfac Inds.",
+    "date": "2026-11-03",
+    "entry_price": "3500.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:22"
+  },
+  {
+    "name": "Alivus Life",
+    "date": "2026-11-03",
+    "entry_price": "1480.20",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:16:22"
+  },
+  {
+    "name": "Petronet LNG",
+    "date": "2026-11-03",
+    "entry_price": "303.45",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:16:22"
+  },
+  {
+    "name": "Divi's Lab.",
+    "date": "2026-11-03",
+    "entry_price": "10030.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:24"
+  },
+  {
+    "name": "Vadilal Inds.",
+    "date": "2026-11-03",
+    "entry_price": "7280.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 2.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:24"
+  },
+  {
+    "name": "Bosch",
+    "date": "2026-11-03",
+    "entry_price": "49700.00",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter"
+    ],
+    "score": 3.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:24"
+  },
+  {
+    "name": "Fredun Pharma",
+    "date": "2026-11-03",
+    "entry_price": "1448.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:25"
+  },
+  {
+    "name": "Bharti Hexacom",
+    "date": "2026-11-03",
+    "entry_price": "1717.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:25"
+  },
+  {
+    "name": "Lumax Auto Tech.",
+    "date": "2026-11-03",
+    "entry_price": "2042.00",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter"
+    ],
+    "score": 3.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:26"
+  },
+  {
+    "name": "Zydus Lifesci.",
+    "date": "2026-11-03",
+    "entry_price": "1239.00",
+    "screens": [
+      "Swing Pick",
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 4.5,
+    "priority": "Medium",
+    "logged_at": "2026-11-03 11:16:26"
+  },
+  {
+    "name": "K P R Mill Ltd",
+    "date": "2026-11-03",
+    "entry_price": "1157.95",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:26"
+  },
+  {
+    "name": "Allied Blenders",
+    "date": "2026-11-03",
+    "entry_price": "692.00",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:27"
+  },
+  {
+    "name": "M R P L",
+    "date": "2026-11-03",
+    "entry_price": "179.90",
+    "screens": [
+      "Swing Pick"
+    ],
+    "tags": [
+      "\ud83d\udcc8 Swing",
+      "\u26a0\ufe0f News-"
+    ],
+    "score": 1.5,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:28"
+  },
+  {
+    "name": "Engineers India",
+    "date": "2026-11-03",
+    "entry_price": "289.10",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:28"
+  },
+  {
+    "name": "HCL Technologies",
+    "date": "2026-11-03",
+    "entry_price": "1437.00",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:29"
+  },
+  {
+    "name": "Aditya Infotech",
+    "date": "2026-11-03",
+    "entry_price": "3890.00",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:29"
+  },
+  {
+    "name": "Dr Lal Pathlabs",
+    "date": "2026-11-03",
+    "entry_price": "1919.00",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:29"
+  },
+  {
+    "name": "Tanla Platforms",
+    "date": "2026-11-03",
+    "entry_price": "663.95",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:30"
+  },
+  {
+    "name": "Kingfa Science",
+    "date": "2026-11-03",
+    "entry_price": "6700.00",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter"
+    ],
+    "score": 2.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:30"
+  },
+  {
+    "name": "Zensar Tech.",
+    "date": "2026-11-03",
+    "entry_price": "533.20",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:31"
+  },
+  {
+    "name": "Jyoti CNC Auto.",
+    "date": "2026-11-03",
+    "entry_price": "966.05",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:31"
+  },
+  {
+    "name": "Vijaya Diagnost.",
+    "date": "2026-11-03",
+    "entry_price": "1443.95",
+    "screens": [
+      "High FII + Promoter"
+    ],
+    "tags": [
+      "\ud83c\udfdb High FII + Promoter",
+      "\ud83d\udcf0 News+"
+    ],
+    "score": 3.0,
+    "priority": "Low",
+    "logged_at": "2026-11-03 11:16:31"
   }
 ]
