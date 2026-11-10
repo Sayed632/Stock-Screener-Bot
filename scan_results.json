@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-11-09 12:00:30",
-  "total_stocks": 181,
+  "scan_time": "2026-11-10 11:38:14",
+  "total_stocks": 179,
   "screen_counts": {
     "High Piotroski": 25,
     "Magic Formula": 25,
@@ -42,6 +42,24 @@
       "url": "https://www.screener.in/company/ANANDRATHI/"
     },
     {
+      "name": "Rubicon Research",
+      "price": "1771.70",
+      "screens": "Darvas Scan, Swing Pick, High FII + Promoter",
+      "screen_count": 3,
+      "score": 5.5,
+      "priority": "Medium",
+      "url": "https://www.screener.in/company/RUBICON/consolidated/"
+    },
+    {
+      "name": "HDFC AMC",
+      "price": "2619.60",
+      "screens": "Driehaus Momentum, Swing Pick, High FII + Promoter",
+      "screen_count": 3,
+      "score": 5.5,
+      "priority": "Medium",
+      "url": "https://www.screener.in/company/HDFCAMC/"
+    },
+    {
       "name": "HBL Engineering",
       "price": "797.45",
       "screens": "High Piotroski, High FII + Promoter",
@@ -51,15 +69,6 @@
       "url": "https://www.screener.in/company/HBLENGINE/consolidated/"
     },
     {
-      "name": "TCS",
-      "price": "2475.40",
-      "screens": "Magic Formula, High FII + Promoter",
-      "screen_count": 2,
-      "score": 5.0,
-      "priority": "Medium",
-      "url": "https://www.screener.in/company/TCS/consolidated/"
-    },
-    {
       "name": "SPARC",
       "price": "210.80",
       "screens": "Magic Formula, Jim Slater Zulu, Driehaus Momentum, Altman Z Score",
@@ -67,33 +76,6 @@
       "score": 4.5,
       "priority": "Medium",
       "url": "https://www.screener.in/company/SPARC/"
-    },
-    {
-      "name": "Rubicon Research",
-      "price": "1771.70",
-      "screens": "Darvas Scan, Swing Pick, High FII + Promoter",
-      "screen_count": 3,
-      "score": 4.5,
-      "priority": "Medium",
-      "url": "https://www.screener.in/company/RUBICON/consolidated/"
-    },
-    {
-      "name": "HDFC AMC",
-      "price": "2619.60",
-      "screens": "Driehaus Momentum, Swing Pick, High FII + Promoter",
-      "screen_count": 3,
-      "score": 4.5,
-      "priority": "Medium",
-      "url": "https://www.screener.in/company/HDFCAMC/"
-    },
-    {
-      "name": "Emami",
-      "price": "410.40",
-      "screens": "Crash Recovery, High FII + Promoter",
-      "screen_count": 2,
-      "score": 4.5,
-      "priority": "Medium",
-      "url": "https://www.screener.in/company/EMAMILTD/consolidated/"
     },
     {
       "name": "Marico",
@@ -114,6 +96,33 @@
       "url": "https://www.screener.in/company/LALPATHLAB/consolidated/"
     },
     {
+      "name": "Alivus Life",
+      "price": "1474.40",
+      "screens": "Swing Pick, High FII + Promoter",
+      "screen_count": 2,
+      "score": 4.5,
+      "priority": "Medium",
+      "url": "https://www.screener.in/company/ALIVUS/"
+    },
+    {
+      "name": "Petronet LNG",
+      "price": "320.45",
+      "screens": "Swing Pick, High FII + Promoter",
+      "screen_count": 2,
+      "score": 4.5,
+      "priority": "Medium",
+      "url": "https://www.screener.in/company/PETRONET/consolidated/"
+    },
+    {
+      "name": "TCS",
+      "price": "2475.40",
+      "screens": "Magic Formula, High FII + Promoter",
+      "screen_count": 2,
+      "score": 4.0,
+      "priority": "Medium",
+      "url": "https://www.screener.in/company/TCS/consolidated/"
+    },
+    {
       "name": "Sanofi India",
       "price": "3329.30",
       "screens": "Magic Formula, High FII + Promoter",
@@ -132,6 +141,15 @@
       "url": "https://www.screener.in/company/532015/"
     },
     {
+      "name": "P & G Hygiene",
+      "price": "7137.50",
+      "screens": "High Piotroski, Altman Z Score",
+      "screen_count": 2,
+      "score": 3.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/PGHH/"
+    },
+    {
       "name": "Indosolar",
       "price": "205.10",
       "screens": "High Piotroski, Magic Formula, Altman Z Score",
@@ -141,13 +159,22 @@
       "url": "https://www.screener.in/company/WAAREEINDO/"
     },
     {
-      "name": "Ksolves India",
-      "price": "213.19",
-      "screens": "Magic Formula, Altman Z Score",
+      "name": "Emami",
+      "price": "410.40",
+      "screens": "Crash Recovery, High FII + Promoter",
       "screen_count": 2,
       "score": 3.5,
       "priority": "Low",
-      "url": "https://www.screener.in/company/KSOLVES/consolidated/"
+      "url": "https://www.screener.in/company/EMAMILTD/consolidated/"
+    },
+    {
+      "name": "Caplin Point Lab",
+      "price": "2502.50",
+      "screens": "Crash Recovery, High FII + Promoter",
+      "screen_count": 2,
+      "score": 3.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/CAPLIPOINT/consolidated/"
     },
     {
       "name": "Hind.Aeronautics",
@@ -157,15 +184,6 @@
       "score": 3.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/HAL/consolidated/"
-    },
-    {
-      "name": "Alivus Life",
-      "price": "1474.40",
-      "screens": "Swing Pick, High FII + Promoter",
-      "screen_count": 2,
-      "score": 3.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/ALIVUS/"
     },
     {
       "name": "T R I L",
@@ -204,6 +222,15 @@
       "url": "https://www.screener.in/company/GVPIL/consolidated/"
     },
     {
+      "name": "GE Vernova T&D",
+      "price": "4106.00",
+      "screens": "High Piotroski",
+      "screen_count": 1,
+      "score": 3.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/GVT&D/"
+    },
+    {
       "name": "Multi Comm. Exc.",
       "price": "3545.00",
       "screens": "High Piotroski, Driehaus Momentum",
@@ -222,6 +249,15 @@
       "url": "https://www.screener.in/company/IGIL/consolidated/"
     },
     {
+      "name": "Swati Projects",
+      "price": "51.16",
+      "screens": "High Piotroski",
+      "screen_count": 1,
+      "score": 3.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/543914/consolidated/"
+    },
+    {
       "name": "String Metaverse",
       "price": "6.19",
       "screens": "High Piotroski, Jim Slater Zulu",
@@ -229,6 +265,15 @@
       "score": 3.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/534535/consolidated/"
+    },
+    {
+      "name": "Travel Food",
+      "price": "1191.80",
+      "screens": "High Piotroski",
+      "screen_count": 1,
+      "score": 3.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/TRAVELFOOD/consolidated/"
     },
     {
       "name": "Waaree Renewab.",
@@ -339,15 +384,6 @@
       "url": "https://www.screener.in/company/TPLPLASTEH/"
     },
     {
-      "name": "Force Motors",
-      "price": "18837.00",
-      "screens": "High FII + Promoter",
-      "screen_count": 1,
-      "score": 3.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/FORCEMOT/consolidated/"
-    },
-    {
       "name": "C P C L",
       "price": "1460.90",
       "screens": "High FII + Promoter",
@@ -384,24 +420,6 @@
       "url": "https://www.screener.in/company/TANLA/consolidated/"
     },
     {
-      "name": "Petronet LNG",
-      "price": "320.45",
-      "screens": "High FII + Promoter",
-      "screen_count": 1,
-      "score": 3.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/PETRONET/consolidated/"
-    },
-    {
-      "name": "P & G Hygiene",
-      "price": "7137.50",
-      "screens": "High Piotroski, Altman Z Score",
-      "screen_count": 2,
-      "score": 2.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/PGHH/"
-    },
-    {
       "name": "TPI India",
       "price": "14.03",
       "screens": "High Piotroski, Altman Z Score",
@@ -409,6 +427,15 @@
       "score": 2.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/500421/"
+    },
+    {
+      "name": "Ksolves India",
+      "price": "213.19",
+      "screens": "Magic Formula, Altman Z Score",
+      "screen_count": 2,
+      "score": 2.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/KSOLVES/consolidated/"
     },
     {
       "name": "Sigma Solve",
@@ -429,6 +456,15 @@
       "url": "https://www.screener.in/company/BONDADA/consolidated/"
     },
     {
+      "name": "Aryaman Capital",
+      "price": "449.95",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "score": 2.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/538716/"
+    },
+    {
       "name": "Fiem Industries",
       "price": "1944.20",
       "screens": "Crash Recovery",
@@ -436,6 +472,15 @@
       "score": 2.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/FIEMIND/consolidated/"
+    },
+    {
+      "name": "Hind. Unilever",
+      "price": "1990.30",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "score": 2.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/HINDUNILVR/consolidated/"
     },
     {
       "name": "Alldigi Tech",
@@ -456,15 +501,6 @@
       "url": "https://www.screener.in/company/GOLDIAM/consolidated/"
     },
     {
-      "name": "B P C L",
-      "price": "316.00",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 2.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/BPCL/consolidated/"
-    },
-    {
       "name": "Dhabriya Poly.",
       "price": "505.25",
       "screens": "Crash Recovery",
@@ -483,6 +519,15 @@
       "url": "https://www.screener.in/company/GLOTTIS/"
     },
     {
+      "name": "Chembond Chemic.",
+      "price": "222.44",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "score": 2.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/CHEMBONDCH/consolidated/"
+    },
+    {
       "name": "Titan Biotech",
       "price": "366.40",
       "screens": "Crash Recovery",
@@ -492,22 +537,13 @@
       "url": "https://www.screener.in/company/524717/consolidated/"
     },
     {
-      "name": "Coromandel Inter",
-      "price": "1879.20",
+      "name": "H P C L",
+      "price": "385.75",
       "screens": "Crash Recovery",
       "screen_count": 1,
       "score": 2.5,
       "priority": "Low",
-      "url": "https://www.screener.in/company/COROMANDEL/consolidated/"
-    },
-    {
-      "name": "T B Z",
-      "price": "636.15",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 2.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/TBZ/consolidated/"
+      "url": "https://www.screener.in/company/HINDPETRO/consolidated/"
     },
     {
       "name": "Olectra Greentec",
@@ -528,13 +564,22 @@
       "url": "https://www.screener.in/company/IOC/consolidated/"
     },
     {
-      "name": "Gokul Agro",
-      "price": "226.18",
-      "screens": "Swing Pick",
+      "name": "Federal-Mogul Go",
+      "price": "480.95",
+      "screens": "Crash Recovery",
       "screen_count": 1,
       "score": 2.5,
       "priority": "Low",
-      "url": "https://www.screener.in/company/GOKULAGRO/consolidated/"
+      "url": "https://www.screener.in/company/FMGOETZE/consolidated/"
+    },
+    {
+      "name": "Sejal Glass",
+      "price": "870.30",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "score": 2.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/SEJALLTD/consolidated/"
     },
     {
       "name": "Concord Control",
@@ -609,15 +654,6 @@
       "url": "https://www.screener.in/company/509024/"
     },
     {
-      "name": "GE Vernova T&D",
-      "price": "4106.00",
-      "screens": "High Piotroski",
-      "screen_count": 1,
-      "score": 2.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/GVT&D/"
-    },
-    {
       "name": "Nexus Surgical",
       "price": "24.45",
       "screens": "High Piotroski",
@@ -654,15 +690,6 @@
       "url": "https://www.screener.in/company/PAGEIND/"
     },
     {
-      "name": "Swati Projects",
-      "price": "51.16",
-      "screens": "High Piotroski",
-      "screen_count": 1,
-      "score": 2.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/543914/consolidated/"
-    },
-    {
       "name": "Tenneco Clean",
       "price": "424.55",
       "screens": "High Piotroski",
@@ -688,15 +715,6 @@
       "score": 2.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/HINDCOPPER/"
-    },
-    {
-      "name": "Travel Food",
-      "price": "1191.80",
-      "screens": "High Piotroski",
-      "screen_count": 1,
-      "score": 2.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/TRAVELFOOD/consolidated/"
     },
     {
       "name": "Apana Logistics",
@@ -789,6 +807,15 @@
       "url": "https://www.screener.in/company/HCLTECH/consolidated/"
     },
     {
+      "name": "Jyothy Labs",
+      "price": "202.69",
+      "screens": "High FII + Promoter",
+      "screen_count": 1,
+      "score": 2.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/JYOTHYLAB/"
+    },
+    {
       "name": "Zensar Tech.",
       "price": "565.80",
       "screens": "High FII + Promoter",
@@ -814,15 +841,6 @@
       "score": 2.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/ICICIGI/"
-    },
-    {
-      "name": "Bosch",
-      "price": "49550.00",
-      "screens": "High FII + Promoter",
-      "screen_count": 1,
-      "score": 2.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/BOSCHLTD/consolidated/"
     },
     {
       "name": "Steelcast",
@@ -987,24 +1005,6 @@
       "url": "https://www.screener.in/company/SANOFICONR/"
     },
     {
-      "name": "Aryaman Capital",
-      "price": "449.95",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/538716/"
-    },
-    {
-      "name": "DDev Plastiks",
-      "price": "249.92",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/DDEVPLSTIK/"
-    },
-    {
       "name": "Banco Products",
       "price": "659.15",
       "screens": "Crash Recovery",
@@ -1023,15 +1023,6 @@
       "url": "https://www.screener.in/company/ACGL/"
     },
     {
-      "name": "LTM",
-      "price": "4318.20",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/LTM/consolidated/"
-    },
-    {
       "name": "Disa India",
       "price": "11684.00",
       "screens": "Crash Recovery",
@@ -1039,6 +1030,15 @@
       "score": 1.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/DISAQ/consolidated/"
+    },
+    {
+      "name": "B P C L",
+      "price": "316.00",
+      "screens": "Crash Recovery",
+      "screen_count": 1,
+      "score": 1.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/BPCL/consolidated/"
     },
     {
       "name": "Havells India",
@@ -1050,31 +1050,13 @@
       "url": "https://www.screener.in/company/HAVELLS/consolidated/"
     },
     {
-      "name": "Amrutanjan Healt",
-      "price": "519.85",
+      "name": "NGL Fine Chem",
+      "price": "2934.80",
       "screens": "Crash Recovery",
       "screen_count": 1,
       "score": 1.5,
       "priority": "Low",
-      "url": "https://www.screener.in/company/AMRUTANJAN/"
-    },
-    {
-      "name": "Caplin Point Lab",
-      "price": "2502.50",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/CAPLIPOINT/consolidated/"
-    },
-    {
-      "name": "H P C L",
-      "price": "385.75",
-      "screens": "Crash Recovery",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/HINDPETRO/consolidated/"
+      "url": "https://www.screener.in/company/NGLFINE/consolidated/"
     },
     {
       "name": "Radhika Jeweltec",
@@ -1084,6 +1066,15 @@
       "score": 1.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/RADHIKAJWE/"
+    },
+    {
+      "name": "Shri Techtex",
+      "price": "68.50",
+      "screens": "Quality 40-80",
+      "screen_count": 1,
+      "score": 1.5,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/SHRITECH/"
     },
     {
       "name": "Mahendra Realtor",
@@ -1111,15 +1102,6 @@
       "score": 1.5,
       "priority": "Low",
       "url": "https://www.screener.in/company/544391/"
-    },
-    {
-      "name": "Clear Secured",
-      "price": "71.70",
-      "screens": "Quality 40-80",
-      "screen_count": 1,
-      "score": 1.5,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/CSSL/consolidated/"
     },
     {
       "name": "S D Retail",
@@ -1194,15 +1176,6 @@
       "url": "https://www.screener.in/company/ACUTAAS/consolidated/"
     },
     {
-      "name": "Menon Bearings",
-      "price": "342.95",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "score": 1.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/MENONBE/consolidated/"
-    },
-    {
       "name": "Agarwal Toughene",
       "price": "180.20",
       "screens": "Darvas Scan",
@@ -1228,15 +1201,6 @@
       "score": 1.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/ROLEXRINGS/"
-    },
-    {
-      "name": "Kabra Jewels",
-      "price": "159.90",
-      "screens": "Darvas Scan",
-      "screen_count": 1,
-      "score": 1.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/KKJEWELS/"
     },
     {
       "name": "U. Y. Fincorp",
@@ -1338,6 +1302,15 @@
       "url": "https://www.screener.in/company/544330/"
     },
     {
+      "name": "Kanohar Elect.",
+      "price": "1006.75",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "score": 1.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/KANOHAR/"
+    },
+    {
       "name": "Nidhi Granites",
       "price": "286.00",
       "screens": "Driehaus Momentum",
@@ -1354,24 +1327,6 @@
       "score": 1.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/505504/"
-    },
-    {
-      "name": "Abbott India",
-      "price": "26680.00",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "score": 1.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/ABBOTINDIA/"
-    },
-    {
-      "name": "V-Marc India",
-      "price": "321.35",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "score": 1.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/VMARCIND/"
     },
     {
       "name": "SRM Energy Ltd",
@@ -1446,13 +1401,13 @@
       "url": "https://www.screener.in/company/544482/consolidated/"
     },
     {
-      "name": "Shri Techtex",
-      "price": "68.50",
+      "name": "Clear Secured",
+      "price": "71.70",
       "screens": "Quality 40-80",
       "screen_count": 1,
       "score": 0.5,
       "priority": "Low",
-      "url": "https://www.screener.in/company/SHRITECH/"
+      "url": "https://www.screener.in/company/CSSL/consolidated/"
     },
     {
       "name": "Jay Bee Laminati",
@@ -1518,6 +1473,15 @@
       "url": "https://www.screener.in/company/PLAZACABLE/"
     },
     {
+      "name": "Menon Bearings",
+      "price": "342.95",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "score": 0.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/MENONBE/consolidated/"
+    },
+    {
       "name": "Coforge",
       "price": "2047.00",
       "screens": "Darvas Scan",
@@ -1525,6 +1489,15 @@
       "score": 0.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/COFORGE/consolidated/"
+    },
+    {
+      "name": "Kabra Jewels",
+      "price": "159.90",
+      "screens": "Darvas Scan",
+      "screen_count": 1,
+      "score": 0.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/KKJEWELS/"
     },
     {
       "name": "Arham Tech",
@@ -1617,15 +1590,6 @@
       "url": "https://www.screener.in/company/BSE/consolidated/"
     },
     {
-      "name": "Kanohar Elect.",
-      "price": "1006.75",
-      "screens": "Driehaus Momentum",
-      "screen_count": 1,
-      "score": 0.0,
-      "priority": "Low",
-      "url": "https://www.screener.in/company/KANOHAR/"
-    },
-    {
       "name": "Kwick Forensic",
       "price": "187.30",
       "screens": "Driehaus Momentum",
@@ -1635,6 +1599,15 @@
       "url": "https://www.screener.in/company/544895/"
     },
     {
+      "name": "Abbott India",
+      "price": "26680.00",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "score": 0.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/ABBOTINDIA/"
+    },
+    {
       "name": "Nippon Life Ind.",
       "price": "1073.50",
       "screens": "Driehaus Momentum",
@@ -1642,6 +1615,15 @@
       "score": 0.0,
       "priority": "Low",
       "url": "https://www.screener.in/company/NAM-INDIA/consolidated/"
+    },
+    {
+      "name": "V-Marc India",
+      "price": "321.35",
+      "screens": "Driehaus Momentum",
+      "screen_count": 1,
+      "score": 0.0,
+      "priority": "Low",
+      "url": "https://www.screener.in/company/VMARCIND/"
     }
   ]
 }
