@@ -48501,5 +48501,13 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-11-17 12:21:43"
+  },
+  {
+    "date": "2026-11-18",
+    "name": "GRASIM",
+    "entry_price": 3084.4,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
