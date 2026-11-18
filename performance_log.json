@@ -50973,5 +50973,13 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-11-18 12:08:28"
+  },
+  {
+    "date": "2026-11-19",
+    "name": "BERGEPAINT",
+    "entry_price": 478.9,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
