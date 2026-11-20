@@ -53633,5 +53633,13 @@
     "score": 3.0,
     "priority": "Low",
     "logged_at": "2026-11-20 12:04:55"
+  },
+  {
+    "date": "2026-11-21",
+    "name": "BRITANNIA",
+    "entry_price": 4868.0,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
