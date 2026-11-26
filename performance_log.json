@@ -64209,5 +64209,29 @@
     "score": 2.0,
     "priority": "Low",
     "logged_at": "2026-11-26 13:03:14"
+  },
+  {
+    "date": "2026-11-27",
+    "name": "INFY",
+    "entry_price": 1130.0,
+    "screens": [
+      "Swing"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "name": "HAL",
+    "entry_price": 4936.0,
+    "screens": [
+      "Swing"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "name": "PFC",
+    "entry_price": 333.8,
+    "screens": [
+      "Swing"
+    ]
   }
 ]
